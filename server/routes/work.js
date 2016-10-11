@@ -20,9 +20,9 @@ let router = express.Router();
 
 
 
-router.get('/',(req,res) => {
+// router.get('/',(req,res) => {
 	
-});
+// });
 
 
 router.post('/', (req, res) => {
@@ -41,8 +41,7 @@ router.post('/', (req, res) => {
 	  work_unfinished,
 	  work_starttime,
 	  work_endtime ,setuptime,work_line} = req.body;
-	console.log("OK");
-
+	
   const Workheet = new Work	({
 	  work_number,
 	  work_name,

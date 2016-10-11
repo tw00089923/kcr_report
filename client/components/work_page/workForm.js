@@ -32,7 +32,8 @@ class WorkForm extends React.Component {
     loading : false,
     errors : {},
     invalid: false,
-    show:false
+    show:false,
+    work:''
 
     };
 
@@ -104,13 +105,17 @@ class WorkForm extends React.Component {
     
 
       <form onSubmit={this.onSubmit} className="form-group" >
-      {this.errors}  {this.state.work_input}
-        {this.state.work_name}
+   
         <div className="form-group"> 
+
+        <label className="control-label"> 
+        <input type="range" min="0" max="50" name="work" value={this.state.work} onChange={this.onChange }/></label> 
+
+
 
         <label className="control-label">   線別  </label> 
          <select
-            className="form-control"
+            className="form-control col-md-3"
             name="work_line"
             onChange={this.onChange}
             value={this.state.work_line}
@@ -122,12 +127,12 @@ class WorkForm extends React.Component {
 
 
 
-
         
        
 
        </div>
-     
+
+      
         <TextFieldGroup
           field="work_number"
           label="工號"
@@ -135,7 +140,9 @@ class WorkForm extends React.Component {
           value={this.state.work_number}
           onChange={this.onChange}
           error={errors.work_number}
+        
         />
+  
          <TextFieldGroup
           field="work_name"
           label="品名"
@@ -144,6 +151,10 @@ class WorkForm extends React.Component {
           onChange={this.onChange}
           error={errors.work_name}
         />
+
+    
+
+
         <TextFieldGroup
           field="work_material"
           label="料號"
@@ -243,6 +254,9 @@ class WorkForm extends React.Component {
           type="number"
         />
 
+        
+
+        {this.state.work}
 
 
 

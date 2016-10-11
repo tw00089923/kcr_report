@@ -1,2027 +1,301 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-xlsx' ]
 2 info using npm@2.15.9
 3 info using node@v4.6.0
-4 verbose readDependencies loading dependencies from /Users/tw00089923/Desktop/kcr_pro/package.json
+4 verbose install initial load of /Users/tw00089923/Desktop/kcr_pro/package.json
 5 warn package.json reddice@1.0.0 No repository field.
-6 verbose install where, deps [ '/Users/tw00089923/Desktop/kcr_pro',
-6 verbose install   [ 'axios',
-6 verbose install     'bluebird',
-6 verbose install     'body-parser',
-6 verbose install     'classnames',
-6 verbose install     'd3',
-6 verbose install     'express',
-6 verbose install     'jsonwebtoken',
-6 verbose install     'jwt-decode',
-6 verbose install     'lodash',
-6 verbose install     'moment',
-6 verbose install     'mongoose',
-6 verbose install     'pg',
-6 verbose install     'react',
-6 verbose install     'react-bootstrap',
-6 verbose install     'react-dom',
-6 verbose install     'react-redux',
-6 verbose install     'react-router',
-6 verbose install     'redux',
-6 verbose install     'redux-thunk',
-6 verbose install     'shortid',
-6 verbose install     'validator',
-6 verbose install     'babel-cli',
-6 verbose install     'babel-loader',
-6 verbose install     'babel-preset-es2015',
-6 verbose install     'babel-preset-react',
-6 verbose install     'nodemon',
-6 verbose install     'react-hot-loader',
-6 verbose install     'webpack',
-6 verbose install     'webpack-dev-middleware',
-6 verbose install     'webpack-hot-middleware' ] ]
-7 verbose install where, peers [ '/Users/tw00089923/Desktop/kcr_pro', [] ]
-8 verbose installManyTop reading for lifecycle /Users/tw00089923/Desktop/kcr_pro/package.json
-9 info preinstall reddice@1.0.0
-10 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/asap/package.json
-11 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/axios/package.json
-12 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-cli/package.json
-13 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-core/package.json
-14 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-loader/package.json
-15 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-preset-es2015/package.json
-16 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-preset-react/package.json
-17 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bcrypt/package.json
-18 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bindings/package.json
-19 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bluebird/package.json
-20 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/body-parser/package.json
-21 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/chartjs/package.json
-22 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/classnames/package.json
-23 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/commander/package.json
-24 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/core-js/package.json
-25 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3/package.json
-26 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-array/package.json
-27 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-axis/package.json
-28 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-brush/package.json
-29 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-chord/package.json
-30 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-collection/package.json
-31 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-color/package.json
-32 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dispatch/package.json
-33 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-drag/package.json
-34 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dsv/package.json
-35 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-ease/package.json
-36 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-force/package.json
-37 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-format/package.json
-38 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-geo/package.json
-39 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-hierarchy/package.json
-40 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-interpolate/package.json
-41 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-path/package.json
-42 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-polygon/package.json
-43 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-quadtree/package.json
-44 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-queue/package.json
-45 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-random/package.json
-46 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-request/package.json
-47 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-scale/package.json
-48 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-selection/package.json
-49 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-shape/package.json
-50 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time/package.json
-51 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time-format/package.json
-52 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-timer/package.json
-53 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-transition/package.json
-54 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-voronoi/package.json
-55 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-zoom/package.json
-56 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/encoding/package.json
-57 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/express/package.json
-58 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/fbjs/package.json
-59 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/graceful-readlink/package.json
-60 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/iconv-lite/package.json
-61 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/immutable/package.json
-62 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/install/package.json
-63 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/is-stream/package.json
-64 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/isomorphic-fetch/package.json
-65 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/js-tokens/package.json
-66 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/jsonwebtoken/package.json
-67 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/jwt-decode/package.json
-68 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/lodash/package.json
-69 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/loose-envify/package.json
-70 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/moment/package.json
-71 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/mongoose/package.json
-72 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/nan/package.json
-73 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/node-fetch/package.json
-74 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/nodemon/package.json
-75 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/package.json
-76 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/object-assign/package.json
-77 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/pg/package.json
-78 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/promise/package.json
-79 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react/package.json
-80 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-bootstrap/package.json
-81 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-dom/package.json
-82 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-hot-loader/package.json
-83 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-redux/package.json
-84 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-router/package.json
-85 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/redux/package.json
-86 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/redux-thunk/package.json
-87 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/rw/package.json
-88 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/shortid/package.json
-89 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/ua-parser-js/package.json
-90 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/validator/package.json
-91 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack/package.json
-92 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack-dev-middleware/package.json
-93 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack-hot-middleware/package.json
-94 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/whatwg-fetch/package.json
-95 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/xmlhttprequest/package.json
-96 verbose readDependencies loading dependencies from /Users/tw00089923/Desktop/kcr_pro/package.json
-97 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/asap/package.json
-98 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/axios/package.json
-99 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-cli/package.json
-100 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-core/package.json
-101 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-loader/package.json
-102 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-preset-es2015/package.json
-103 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-preset-react/package.json
-104 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bcrypt/package.json
-105 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bindings/package.json
-106 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bluebird/package.json
-107 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/body-parser/package.json
-108 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/chartjs/package.json
-109 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/classnames/package.json
-110 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/commander/package.json
-111 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/core-js/package.json
-112 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3/package.json
-113 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-array/package.json
-114 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-axis/package.json
-115 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-brush/package.json
-116 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-chord/package.json
-117 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-collection/package.json
-118 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-color/package.json
-119 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dispatch/package.json
-120 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-drag/package.json
-121 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dsv/package.json
-122 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-ease/package.json
-123 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-force/package.json
-124 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-format/package.json
-125 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-geo/package.json
-126 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-hierarchy/package.json
-127 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-interpolate/package.json
-128 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-path/package.json
-129 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-polygon/package.json
-130 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-quadtree/package.json
-131 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-queue/package.json
-132 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-random/package.json
-133 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-request/package.json
-134 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-scale/package.json
-135 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-selection/package.json
-136 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-shape/package.json
-137 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time/package.json
-138 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time-format/package.json
-139 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-timer/package.json
-140 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-transition/package.json
-141 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-voronoi/package.json
-142 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-zoom/package.json
-143 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/encoding/package.json
-144 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/express/package.json
-145 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/fbjs/package.json
-146 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/graceful-readlink/package.json
-147 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/iconv-lite/package.json
-148 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/immutable/package.json
-149 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/install/package.json
-150 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/is-stream/package.json
-151 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/isomorphic-fetch/package.json
-152 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/js-tokens/package.json
-153 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/jsonwebtoken/package.json
-154 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/jwt-decode/package.json
-155 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/lodash/package.json
-156 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/loose-envify/package.json
-157 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/moment/package.json
-158 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/mongoose/package.json
-159 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/nan/package.json
-160 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/node-fetch/package.json
-161 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/nodemon/package.json
-162 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/package.json
-163 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/object-assign/package.json
-164 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/pg/package.json
-165 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/promise/package.json
-166 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react/package.json
-167 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-bootstrap/package.json
-168 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-dom/package.json
-169 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-hot-loader/package.json
-170 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-redux/package.json
-171 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-router/package.json
-172 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/redux/package.json
-173 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/redux-thunk/package.json
-174 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/rw/package.json
-175 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/shortid/package.json
-176 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/ua-parser-js/package.json
-177 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/validator/package.json
-178 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack/package.json
-179 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack-dev-middleware/package.json
-180 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack-hot-middleware/package.json
-181 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/whatwg-fetch/package.json
-182 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/xmlhttprequest/package.json
-183 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/babel/package.json
-184 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/babel-doctor/package.json
-185 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/babel-external-helpers/package.json
-186 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/babel-node/package.json
-187 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2json/package.json
-188 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2tsv/package.json
-189 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2dsv/package.json
-190 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2json/package.json
-191 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2csv/package.json
-192 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2dsv/package.json
-193 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2tsv/package.json
-194 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/loose-envify/package.json
-195 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/nodemon/package.json
-196 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/npm/package.json
-197 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2csv/package.json
-198 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2json/package.json
-199 verbose targetResolver reading package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/webpack/package.json
-200 verbose already installed skipping mongoose@^4.6.0 /Users/tw00089923/Desktop/kcr_pro
-201 verbose already installed skipping pg@^6.0.2 /Users/tw00089923/Desktop/kcr_pro
-202 verbose already installed skipping react@^15.1.0 /Users/tw00089923/Desktop/kcr_pro
-203 verbose already installed skipping react-bootstrap@^0.30.3 /Users/tw00089923/Desktop/kcr_pro
-204 verbose already installed skipping react-dom@^15.1.0 /Users/tw00089923/Desktop/kcr_pro
-205 verbose already installed skipping react-redux@^4.4.5 /Users/tw00089923/Desktop/kcr_pro
-206 verbose already installed skipping react-router@^2.5.0 /Users/tw00089923/Desktop/kcr_pro
-207 verbose already installed skipping redux@^3.5.2 /Users/tw00089923/Desktop/kcr_pro
-208 verbose already installed skipping redux-thunk@^2.1.0 /Users/tw00089923/Desktop/kcr_pro
-209 verbose already installed skipping shortid@^2.2.6 /Users/tw00089923/Desktop/kcr_pro
-210 verbose already installed skipping validator@^5.4.0 /Users/tw00089923/Desktop/kcr_pro
-211 verbose already installed skipping babel-cli@^6.10.1 /Users/tw00089923/Desktop/kcr_pro
-212 verbose already installed skipping babel-loader@^6.2.4 /Users/tw00089923/Desktop/kcr_pro
-213 verbose already installed skipping babel-preset-es2015@^6.9.0 /Users/tw00089923/Desktop/kcr_pro
-214 verbose already installed skipping babel-preset-react@^6.5.0 /Users/tw00089923/Desktop/kcr_pro
-215 verbose already installed skipping nodemon@^1.9.2 /Users/tw00089923/Desktop/kcr_pro
-216 verbose already installed skipping react-hot-loader@^1.3.0 /Users/tw00089923/Desktop/kcr_pro
-217 verbose already installed skipping webpack@^1.13.1 /Users/tw00089923/Desktop/kcr_pro
-218 verbose already installed skipping webpack-dev-middleware@^1.6.1 /Users/tw00089923/Desktop/kcr_pro
-219 verbose already installed skipping webpack-hot-middleware@^2.10.0 /Users/tw00089923/Desktop/kcr_pro
-220 verbose already installed skipping axios@0.13.1 /Users/tw00089923/Desktop/kcr_pro
-221 verbose already installed skipping bluebird@^3.4.1 /Users/tw00089923/Desktop/kcr_pro
-222 verbose already installed skipping body-parser@^1.15.2 /Users/tw00089923/Desktop/kcr_pro
-223 verbose already installed skipping classnames@^2.2.5 /Users/tw00089923/Desktop/kcr_pro
-224 verbose already installed skipping d3@^4.2.6 /Users/tw00089923/Desktop/kcr_pro
-225 verbose already installed skipping express@^4.14.0 /Users/tw00089923/Desktop/kcr_pro
-226 verbose already installed skipping jsonwebtoken@^7.1.7 /Users/tw00089923/Desktop/kcr_pro
-227 verbose already installed skipping jwt-decode@^2.1.0 /Users/tw00089923/Desktop/kcr_pro
-228 verbose already installed skipping lodash@^4.13.1 /Users/tw00089923/Desktop/kcr_pro
-229 verbose already installed skipping moment@^2.15.1 /Users/tw00089923/Desktop/kcr_pro
-230 silly install resolved []
-231 info build /Users/tw00089923/Desktop/kcr_pro
-232 info linkStuff reddice@1.0.0
-233 silly linkStuff reddice@1.0.0 has /Users/tw00089923/Desktop as its parent node_modules
-234 verbose linkBins reddice@1.0.0
-235 verbose linkMans reddice@1.0.0
-236 verbose rebuildBundles reddice@1.0.0
-237 verbose rebuildBundles [ '.bin',
-237 verbose rebuildBundles   'asap',
-237 verbose rebuildBundles   'axios',
-237 verbose rebuildBundles   'babel-cli',
-237 verbose rebuildBundles   'babel-core',
-237 verbose rebuildBundles   'babel-loader',
-237 verbose rebuildBundles   'babel-preset-es2015',
-237 verbose rebuildBundles   'babel-preset-react',
-237 verbose rebuildBundles   'bcrypt',
-237 verbose rebuildBundles   'bindings',
-237 verbose rebuildBundles   'bluebird',
-237 verbose rebuildBundles   'body-parser',
-237 verbose rebuildBundles   'chartjs',
-237 verbose rebuildBundles   'classnames',
-237 verbose rebuildBundles   'commander',
-237 verbose rebuildBundles   'core-js',
-237 verbose rebuildBundles   'd3',
-237 verbose rebuildBundles   'd3-array',
-237 verbose rebuildBundles   'd3-axis',
-237 verbose rebuildBundles   'd3-brush',
-237 verbose rebuildBundles   'd3-chord',
-237 verbose rebuildBundles   'd3-collection',
-237 verbose rebuildBundles   'd3-color',
-237 verbose rebuildBundles   'd3-dispatch',
-237 verbose rebuildBundles   'd3-drag',
-237 verbose rebuildBundles   'd3-dsv',
-237 verbose rebuildBundles   'd3-ease',
-237 verbose rebuildBundles   'd3-force',
-237 verbose rebuildBundles   'd3-format',
-237 verbose rebuildBundles   'd3-geo',
-237 verbose rebuildBundles   'd3-hierarchy',
-237 verbose rebuildBundles   'd3-interpolate',
-237 verbose rebuildBundles   'd3-path',
-237 verbose rebuildBundles   'd3-polygon',
-237 verbose rebuildBundles   'd3-quadtree',
-237 verbose rebuildBundles   'd3-queue',
-237 verbose rebuildBundles   'd3-random',
-237 verbose rebuildBundles   'd3-request',
-237 verbose rebuildBundles   'd3-scale',
-237 verbose rebuildBundles   'd3-selection',
-237 verbose rebuildBundles   'd3-shape',
-237 verbose rebuildBundles   'd3-time',
-237 verbose rebuildBundles   'd3-time-format',
-237 verbose rebuildBundles   'd3-timer',
-237 verbose rebuildBundles   'd3-transition',
-237 verbose rebuildBundles   'd3-voronoi',
-237 verbose rebuildBundles   'd3-zoom',
-237 verbose rebuildBundles   'encoding',
-237 verbose rebuildBundles   'express',
-237 verbose rebuildBundles   'fbjs',
-237 verbose rebuildBundles   'graceful-readlink',
-237 verbose rebuildBundles   'iconv-lite',
-237 verbose rebuildBundles   'immutable',
-237 verbose rebuildBundles   'install',
-237 verbose rebuildBundles   'is-stream',
-237 verbose rebuildBundles   'isomorphic-fetch',
-237 verbose rebuildBundles   'js-tokens',
-237 verbose rebuildBundles   'jsonwebtoken',
-237 verbose rebuildBundles   'jwt-decode',
-237 verbose rebuildBundles   'lodash',
-237 verbose rebuildBundles   'loose-envify',
-237 verbose rebuildBundles   'moment',
-237 verbose rebuildBundles   'mongoose',
-237 verbose rebuildBundles   'nan',
-237 verbose rebuildBundles   'node-fetch',
-237 verbose rebuildBundles   'nodemon',
-237 verbose rebuildBundles   'npm',
-237 verbose rebuildBundles   'object-assign',
-237 verbose rebuildBundles   'pg',
-237 verbose rebuildBundles   'promise',
-237 verbose rebuildBundles   'react',
-237 verbose rebuildBundles   'react-bootstrap',
-237 verbose rebuildBundles   'react-dom',
-237 verbose rebuildBundles   'react-hot-loader',
-237 verbose rebuildBundles   'react-redux',
-237 verbose rebuildBundles   'react-router',
-237 verbose rebuildBundles   'redux',
-237 verbose rebuildBundles   'redux-thunk',
-237 verbose rebuildBundles   'rw',
-237 verbose rebuildBundles   'shortid',
-237 verbose rebuildBundles   'ua-parser-js',
-237 verbose rebuildBundles   'validator',
-237 verbose rebuildBundles   'webpack',
-237 verbose rebuildBundles   'webpack-dev-middleware',
-237 verbose rebuildBundles   'webpack-hot-middleware',
-237 verbose rebuildBundles   'whatwg-fetch',
-237 verbose rebuildBundles   'xmlhttprequest' ]
-238 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/asap
-239 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/asap
-240 info preinstall asap@2.0.5
-241 info linkStuff asap@2.0.5
-242 silly linkStuff asap@2.0.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-243 verbose linkBins asap@2.0.5
-244 verbose linkMans asap@2.0.5
-245 verbose rebuildBundles asap@2.0.5
-246 info install asap@2.0.5
-247 info postinstall asap@2.0.5
-248 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-core
-249 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-core
-250 info preinstall babel-core@6.14.0
-251 info linkStuff babel-core@6.14.0
-252 silly linkStuff babel-core@6.14.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-253 verbose linkBins babel-core@6.14.0
-254 verbose linkMans babel-core@6.14.0
-255 verbose rebuildBundles babel-core@6.14.0
-256 verbose rebuildBundles [ '.bin',
-256 verbose rebuildBundles   'babel-code-frame',
-256 verbose rebuildBundles   'babel-generator',
-256 verbose rebuildBundles   'babel-helpers',
-256 verbose rebuildBundles   'babel-messages',
-256 verbose rebuildBundles   'babel-register',
-256 verbose rebuildBundles   'babel-runtime',
-256 verbose rebuildBundles   'babel-template',
-256 verbose rebuildBundles   'babel-traverse',
-256 verbose rebuildBundles   'babel-types',
-256 verbose rebuildBundles   'babylon',
-256 verbose rebuildBundles   'convert-source-map',
-256 verbose rebuildBundles   'debug',
-256 verbose rebuildBundles   'json5',
-256 verbose rebuildBundles   'minimatch',
-256 verbose rebuildBundles   'path-exists',
-256 verbose rebuildBundles   'path-is-absolute',
-256 verbose rebuildBundles   'private',
-256 verbose rebuildBundles   'shebang-regex',
-256 verbose rebuildBundles   'slash',
-256 verbose rebuildBundles   'source-map' ]
-257 info install babel-core@6.14.0
-258 info postinstall babel-core@6.14.0
-259 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/bcrypt
-260 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/bcrypt
-261 info preinstall bcrypt@0.8.7
-262 info linkStuff bcrypt@0.8.7
-263 silly linkStuff bcrypt@0.8.7 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-264 verbose linkBins bcrypt@0.8.7
-265 verbose linkMans bcrypt@0.8.7
-266 verbose rebuildBundles bcrypt@0.8.7
-267 info install bcrypt@0.8.7
-268 verbose unsafe-perm in lifecycle true
-269 info postinstall bcrypt@0.8.7
-270 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/bindings
-271 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/bindings
-272 info preinstall bindings@1.2.1
-273 info linkStuff bindings@1.2.1
-274 silly linkStuff bindings@1.2.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-275 verbose linkBins bindings@1.2.1
-276 verbose linkMans bindings@1.2.1
-277 verbose rebuildBundles bindings@1.2.1
-278 info install bindings@1.2.1
-279 info postinstall bindings@1.2.1
-280 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/chartjs
-281 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/chartjs
-282 info preinstall chartjs@0.3.24
-283 info linkStuff chartjs@0.3.24
-284 silly linkStuff chartjs@0.3.24 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-285 verbose linkBins chartjs@0.3.24
-286 verbose linkMans chartjs@0.3.24
-287 verbose rebuildBundles chartjs@0.3.24
-288 info install chartjs@0.3.24
-289 info postinstall chartjs@0.3.24
-290 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/commander
-291 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/commander
-292 info preinstall commander@2.9.0
-293 info linkStuff commander@2.9.0
-294 silly linkStuff commander@2.9.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-295 verbose linkBins commander@2.9.0
-296 verbose linkMans commander@2.9.0
-297 verbose rebuildBundles commander@2.9.0
-298 info install commander@2.9.0
-299 info postinstall commander@2.9.0
-300 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/core-js
-301 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/core-js
-302 info preinstall core-js@1.2.7
-303 info linkStuff core-js@1.2.7
-304 silly linkStuff core-js@1.2.7 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-305 verbose linkBins core-js@1.2.7
-306 verbose linkMans core-js@1.2.7
-307 verbose rebuildBundles core-js@1.2.7
-308 info install core-js@1.2.7
-309 info postinstall core-js@1.2.7
-310 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-array
-311 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-array
-312 info preinstall d3-array@1.0.1
-313 info linkStuff d3-array@1.0.1
-314 silly linkStuff d3-array@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-315 verbose linkBins d3-array@1.0.1
-316 verbose linkMans d3-array@1.0.1
-317 verbose rebuildBundles d3-array@1.0.1
-318 info install d3-array@1.0.1
-319 info postinstall d3-array@1.0.1
-320 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-axis
-321 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-axis
-322 info preinstall d3-axis@1.0.3
-323 info linkStuff d3-axis@1.0.3
-324 silly linkStuff d3-axis@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-325 verbose linkBins d3-axis@1.0.3
-326 verbose linkMans d3-axis@1.0.3
-327 verbose rebuildBundles d3-axis@1.0.3
-328 info install d3-axis@1.0.3
-329 info postinstall d3-axis@1.0.3
-330 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-brush
-331 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-brush
-332 info preinstall d3-brush@1.0.3
-333 info linkStuff d3-brush@1.0.3
-334 silly linkStuff d3-brush@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-335 verbose linkBins d3-brush@1.0.3
-336 verbose linkMans d3-brush@1.0.3
-337 verbose rebuildBundles d3-brush@1.0.3
-338 info install d3-brush@1.0.3
-339 info postinstall d3-brush@1.0.3
-340 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-chord
-341 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-chord
-342 info preinstall d3-chord@1.0.2
-343 info linkStuff d3-chord@1.0.2
-344 silly linkStuff d3-chord@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-345 verbose linkBins d3-chord@1.0.2
-346 verbose linkMans d3-chord@1.0.2
-347 verbose rebuildBundles d3-chord@1.0.2
-348 info install d3-chord@1.0.2
-349 info postinstall d3-chord@1.0.2
-350 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-collection
-351 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-collection
-352 info preinstall d3-collection@1.0.1
-353 info linkStuff d3-collection@1.0.1
-354 silly linkStuff d3-collection@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-355 verbose linkBins d3-collection@1.0.1
-356 verbose linkMans d3-collection@1.0.1
-357 verbose rebuildBundles d3-collection@1.0.1
-358 info install d3-collection@1.0.1
-359 info postinstall d3-collection@1.0.1
-360 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-color
-361 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-color
-362 info preinstall d3-color@1.0.1
-363 info linkStuff d3-color@1.0.1
-364 silly linkStuff d3-color@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-365 verbose linkBins d3-color@1.0.1
-366 verbose linkMans d3-color@1.0.1
-367 verbose rebuildBundles d3-color@1.0.1
-368 info install d3-color@1.0.1
-369 info postinstall d3-color@1.0.1
-370 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dispatch
-371 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dispatch
-372 info preinstall d3-dispatch@1.0.1
-373 info linkStuff d3-dispatch@1.0.1
-374 silly linkStuff d3-dispatch@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-375 verbose linkBins d3-dispatch@1.0.1
-376 verbose linkMans d3-dispatch@1.0.1
-377 verbose rebuildBundles d3-dispatch@1.0.1
-378 info install d3-dispatch@1.0.1
-379 info postinstall d3-dispatch@1.0.1
-380 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-drag
-381 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-drag
-382 info preinstall d3-drag@1.0.1
-383 info linkStuff d3-drag@1.0.1
-384 silly linkStuff d3-drag@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-385 verbose linkBins d3-drag@1.0.1
-386 verbose linkMans d3-drag@1.0.1
-387 verbose rebuildBundles d3-drag@1.0.1
-388 info install d3-drag@1.0.1
-389 info postinstall d3-drag@1.0.1
-390 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dsv
-391 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dsv
-392 info preinstall d3-dsv@1.0.3
-393 info linkStuff d3-dsv@1.0.3
-394 silly linkStuff d3-dsv@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-395 verbose linkBins d3-dsv@1.0.3
-396 verbose link bins [ { csv2json: 'bin/dsv2json',
-396 verbose link bins     csv2tsv: 'bin/dsv2dsv',
-396 verbose link bins     dsv2dsv: 'bin/dsv2dsv',
-396 verbose link bins     dsv2json: 'bin/dsv2json',
-396 verbose link bins     json2csv: 'bin/json2dsv',
-396 verbose link bins     json2dsv: 'bin/json2dsv',
-396 verbose link bins     json2tsv: 'bin/json2dsv',
-396 verbose link bins     tsv2csv: 'bin/dsv2dsv',
-396 verbose link bins     tsv2json: 'bin/dsv2json' },
-396 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/.bin',
-396 verbose link bins   false ]
-397 verbose linkMans d3-dsv@1.0.3
-398 verbose rebuildBundles d3-dsv@1.0.3
-399 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2json is being purged
-400 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2json
-401 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2tsv is being purged
-402 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2tsv
-403 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2dsv is being purged
-404 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2dsv
-405 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2csv is being purged
-406 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2csv
-407 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2json is being purged
-408 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2json
-409 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2dsv is being purged
-410 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2dsv
-411 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2tsv is being purged
-412 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2tsv
-413 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2csv is being purged
-414 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2csv
-415 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2json is being purged
-416 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2json
-417 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2json
-418 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/csv2tsv
-419 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2dsv
-420 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2csv
-421 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/dsv2json
-422 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2dsv
-423 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/json2tsv
-424 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2csv
-425 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/tsv2json
-426 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-427 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-428 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-429 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-430 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-431 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-432 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-433 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-434 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-435 info install d3-dsv@1.0.3
-436 info postinstall d3-dsv@1.0.3
-437 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-ease
-438 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-ease
-439 info preinstall d3-ease@1.0.1
-440 info linkStuff d3-ease@1.0.1
-441 silly linkStuff d3-ease@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-442 verbose linkBins d3-ease@1.0.1
-443 verbose linkMans d3-ease@1.0.1
-444 verbose rebuildBundles d3-ease@1.0.1
-445 info install d3-ease@1.0.1
-446 info postinstall d3-ease@1.0.1
-447 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-force
-448 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-force
-449 info preinstall d3-force@1.0.2
-450 info linkStuff d3-force@1.0.2
-451 silly linkStuff d3-force@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-452 verbose linkBins d3-force@1.0.2
-453 verbose linkMans d3-force@1.0.2
-454 verbose rebuildBundles d3-force@1.0.2
-455 info install d3-force@1.0.2
-456 info postinstall d3-force@1.0.2
-457 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-format
-458 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-format
-459 info preinstall d3-format@1.0.2
-460 info linkStuff d3-format@1.0.2
-461 silly linkStuff d3-format@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-462 verbose linkBins d3-format@1.0.2
-463 verbose linkMans d3-format@1.0.2
-464 verbose rebuildBundles d3-format@1.0.2
-465 info install d3-format@1.0.2
-466 info postinstall d3-format@1.0.2
-467 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-geo
-468 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-geo
-469 info preinstall d3-geo@1.2.5
-470 info linkStuff d3-geo@1.2.5
-471 silly linkStuff d3-geo@1.2.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-472 verbose linkBins d3-geo@1.2.5
-473 verbose linkMans d3-geo@1.2.5
-474 verbose rebuildBundles d3-geo@1.2.5
-475 info install d3-geo@1.2.5
-476 info postinstall d3-geo@1.2.5
-477 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-hierarchy
-478 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-hierarchy
-479 info preinstall d3-hierarchy@1.0.2
-480 info linkStuff d3-hierarchy@1.0.2
-481 silly linkStuff d3-hierarchy@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-482 verbose linkBins d3-hierarchy@1.0.2
-483 verbose linkMans d3-hierarchy@1.0.2
-484 verbose rebuildBundles d3-hierarchy@1.0.2
-485 info install d3-hierarchy@1.0.2
-486 info postinstall d3-hierarchy@1.0.2
-487 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-interpolate
-488 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-interpolate
-489 info preinstall d3-interpolate@1.1.1
-490 info linkStuff d3-interpolate@1.1.1
-491 silly linkStuff d3-interpolate@1.1.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-492 verbose linkBins d3-interpolate@1.1.1
-493 verbose linkMans d3-interpolate@1.1.1
-494 verbose rebuildBundles d3-interpolate@1.1.1
-495 info install d3-interpolate@1.1.1
-496 info postinstall d3-interpolate@1.1.1
-497 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-path
-498 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-path
-499 info preinstall d3-path@1.0.2
-500 info linkStuff d3-path@1.0.2
-501 silly linkStuff d3-path@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-502 verbose linkBins d3-path@1.0.2
-503 verbose linkMans d3-path@1.0.2
-504 verbose rebuildBundles d3-path@1.0.2
-505 info install d3-path@1.0.2
-506 info postinstall d3-path@1.0.2
-507 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-polygon
-508 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-polygon
-509 info preinstall d3-polygon@1.0.1
-510 info linkStuff d3-polygon@1.0.1
-511 silly linkStuff d3-polygon@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-512 verbose linkBins d3-polygon@1.0.1
-513 verbose linkMans d3-polygon@1.0.1
-514 verbose rebuildBundles d3-polygon@1.0.1
-515 info install d3-polygon@1.0.1
-516 info postinstall d3-polygon@1.0.1
-517 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-quadtree
-518 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-quadtree
-519 info preinstall d3-quadtree@1.0.1
-520 info linkStuff d3-quadtree@1.0.1
-521 silly linkStuff d3-quadtree@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-522 verbose linkBins d3-quadtree@1.0.1
-523 verbose linkMans d3-quadtree@1.0.1
-524 verbose rebuildBundles d3-quadtree@1.0.1
-525 info install d3-quadtree@1.0.1
-526 info postinstall d3-quadtree@1.0.1
-527 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-queue
-528 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-queue
-529 info preinstall d3-queue@3.0.3
-530 info linkStuff d3-queue@3.0.3
-531 silly linkStuff d3-queue@3.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-532 verbose linkBins d3-queue@3.0.3
-533 verbose linkMans d3-queue@3.0.3
-534 verbose rebuildBundles d3-queue@3.0.3
-535 info install d3-queue@3.0.3
-536 info postinstall d3-queue@3.0.3
-537 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-random
-538 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-random
-539 info preinstall d3-random@1.0.1
-540 info linkStuff d3-random@1.0.1
-541 silly linkStuff d3-random@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-542 verbose linkBins d3-random@1.0.1
-543 verbose linkMans d3-random@1.0.1
-544 verbose rebuildBundles d3-random@1.0.1
-545 info install d3-random@1.0.1
-546 info postinstall d3-random@1.0.1
-547 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-request
-548 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-request
-549 info preinstall d3-request@1.0.2
-550 info linkStuff d3-request@1.0.2
-551 silly linkStuff d3-request@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-552 verbose linkBins d3-request@1.0.2
-553 verbose linkMans d3-request@1.0.2
-554 verbose rebuildBundles d3-request@1.0.2
-555 info install d3-request@1.0.2
-556 info postinstall d3-request@1.0.2
-557 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-scale
-558 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-scale
-559 info preinstall d3-scale@1.0.3
-560 info linkStuff d3-scale@1.0.3
-561 silly linkStuff d3-scale@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-562 verbose linkBins d3-scale@1.0.3
-563 verbose linkMans d3-scale@1.0.3
-564 verbose rebuildBundles d3-scale@1.0.3
-565 info install d3-scale@1.0.3
-566 info postinstall d3-scale@1.0.3
-567 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-selection
-568 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-selection
-569 info preinstall d3-selection@1.0.2
-570 info linkStuff d3-selection@1.0.2
-571 silly linkStuff d3-selection@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-572 verbose linkBins d3-selection@1.0.2
-573 verbose linkMans d3-selection@1.0.2
-574 verbose rebuildBundles d3-selection@1.0.2
-575 info install d3-selection@1.0.2
-576 info postinstall d3-selection@1.0.2
-577 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-shape
-578 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-shape
-579 info preinstall d3-shape@1.0.3
-580 info linkStuff d3-shape@1.0.3
-581 silly linkStuff d3-shape@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-582 verbose linkBins d3-shape@1.0.3
-583 verbose linkMans d3-shape@1.0.3
-584 verbose rebuildBundles d3-shape@1.0.3
-585 info install d3-shape@1.0.3
-586 info postinstall d3-shape@1.0.3
-587 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time
-588 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time
-589 info preinstall d3-time@1.0.4
-590 info linkStuff d3-time@1.0.4
-591 silly linkStuff d3-time@1.0.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-592 verbose linkBins d3-time@1.0.4
-593 verbose linkMans d3-time@1.0.4
-594 verbose rebuildBundles d3-time@1.0.4
-595 info install d3-time@1.0.4
-596 info postinstall d3-time@1.0.4
-597 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time-format
-598 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time-format
-599 info preinstall d3-time-format@2.0.2
-600 info linkStuff d3-time-format@2.0.2
-601 silly linkStuff d3-time-format@2.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-602 verbose linkBins d3-time-format@2.0.2
-603 verbose linkMans d3-time-format@2.0.2
-604 verbose rebuildBundles d3-time-format@2.0.2
-605 info install d3-time-format@2.0.2
-606 info postinstall d3-time-format@2.0.2
-607 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-timer
-608 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-timer
-609 info preinstall d3-timer@1.0.3
-610 info linkStuff d3-timer@1.0.3
-611 silly linkStuff d3-timer@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-612 verbose linkBins d3-timer@1.0.3
-613 verbose linkMans d3-timer@1.0.3
-614 verbose rebuildBundles d3-timer@1.0.3
-615 info install d3-timer@1.0.3
-616 info postinstall d3-timer@1.0.3
-617 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-transition
-618 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-transition
-619 info preinstall d3-transition@1.0.2
-620 info linkStuff d3-transition@1.0.2
-621 silly linkStuff d3-transition@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-622 verbose linkBins d3-transition@1.0.2
-623 verbose linkMans d3-transition@1.0.2
-624 verbose rebuildBundles d3-transition@1.0.2
-625 info install d3-transition@1.0.2
-626 info postinstall d3-transition@1.0.2
-627 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-voronoi
-628 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-voronoi
-629 info preinstall d3-voronoi@1.0.2
-630 info linkStuff d3-voronoi@1.0.2
-631 silly linkStuff d3-voronoi@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-632 verbose linkBins d3-voronoi@1.0.2
-633 verbose linkMans d3-voronoi@1.0.2
-634 verbose rebuildBundles d3-voronoi@1.0.2
-635 info install d3-voronoi@1.0.2
-636 info postinstall d3-voronoi@1.0.2
-637 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-zoom
-638 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-zoom
-639 info preinstall d3-zoom@1.0.3
-640 info linkStuff d3-zoom@1.0.3
-641 silly linkStuff d3-zoom@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-642 verbose linkBins d3-zoom@1.0.3
-643 verbose linkMans d3-zoom@1.0.3
-644 verbose rebuildBundles d3-zoom@1.0.3
-645 info install d3-zoom@1.0.3
-646 info postinstall d3-zoom@1.0.3
-647 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/encoding
-648 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/encoding
-649 info preinstall encoding@0.1.12
-650 info linkStuff encoding@0.1.12
-651 silly linkStuff encoding@0.1.12 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-652 verbose linkBins encoding@0.1.12
-653 verbose linkMans encoding@0.1.12
-654 verbose rebuildBundles encoding@0.1.12
-655 info install encoding@0.1.12
-656 info postinstall encoding@0.1.12
-657 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/fbjs
-658 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/fbjs
-659 info preinstall fbjs@0.8.5
-660 info linkStuff fbjs@0.8.5
-661 silly linkStuff fbjs@0.8.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-662 verbose linkBins fbjs@0.8.5
-663 verbose linkMans fbjs@0.8.5
-664 verbose rebuildBundles fbjs@0.8.5
-665 info install fbjs@0.8.5
-666 info postinstall fbjs@0.8.5
-667 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/graceful-readlink
-668 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/graceful-readlink
-669 info preinstall graceful-readlink@1.0.1
-670 info linkStuff graceful-readlink@1.0.1
-671 silly linkStuff graceful-readlink@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-672 verbose linkBins graceful-readlink@1.0.1
-673 verbose linkMans graceful-readlink@1.0.1
-674 verbose rebuildBundles graceful-readlink@1.0.1
-675 info install graceful-readlink@1.0.1
-676 info postinstall graceful-readlink@1.0.1
-677 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/iconv-lite
-678 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/iconv-lite
-679 info preinstall iconv-lite@0.4.13
-680 info linkStuff iconv-lite@0.4.13
-681 silly linkStuff iconv-lite@0.4.13 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-682 verbose linkBins iconv-lite@0.4.13
-683 verbose linkMans iconv-lite@0.4.13
-684 verbose rebuildBundles iconv-lite@0.4.13
-685 info install iconv-lite@0.4.13
-686 info postinstall iconv-lite@0.4.13
-687 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/immutable
-688 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/immutable
-689 info preinstall immutable@3.8.1
-690 info linkStuff immutable@3.8.1
-691 silly linkStuff immutable@3.8.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-692 verbose linkBins immutable@3.8.1
-693 verbose linkMans immutable@3.8.1
-694 verbose rebuildBundles immutable@3.8.1
-695 info install immutable@3.8.1
-696 info postinstall immutable@3.8.1
-697 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/install
-698 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/install
-699 info preinstall install@0.8.1
-700 info linkStuff install@0.8.1
-701 silly linkStuff install@0.8.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-702 verbose linkBins install@0.8.1
-703 verbose linkMans install@0.8.1
-704 verbose rebuildBundles install@0.8.1
-705 info install install@0.8.1
-706 info postinstall install@0.8.1
-707 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/is-stream
-708 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/is-stream
-709 info preinstall is-stream@1.1.0
-710 info linkStuff is-stream@1.1.0
-711 silly linkStuff is-stream@1.1.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-712 verbose linkBins is-stream@1.1.0
-713 verbose linkMans is-stream@1.1.0
-714 verbose rebuildBundles is-stream@1.1.0
-715 info install is-stream@1.1.0
-716 info postinstall is-stream@1.1.0
-717 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/isomorphic-fetch
-718 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/isomorphic-fetch
-719 info preinstall isomorphic-fetch@2.2.1
-720 info linkStuff isomorphic-fetch@2.2.1
-721 silly linkStuff isomorphic-fetch@2.2.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-722 verbose linkBins isomorphic-fetch@2.2.1
-723 verbose linkMans isomorphic-fetch@2.2.1
-724 verbose rebuildBundles isomorphic-fetch@2.2.1
-725 info install isomorphic-fetch@2.2.1
-726 info postinstall isomorphic-fetch@2.2.1
-727 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/js-tokens
-728 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/js-tokens
-729 info preinstall js-tokens@1.0.3
-730 info linkStuff js-tokens@1.0.3
-731 silly linkStuff js-tokens@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-732 verbose linkBins js-tokens@1.0.3
-733 verbose linkMans js-tokens@1.0.3
-734 verbose rebuildBundles js-tokens@1.0.3
-735 info install js-tokens@1.0.3
-736 info postinstall js-tokens@1.0.3
-737 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/loose-envify
-738 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/loose-envify
-739 info preinstall loose-envify@1.2.0
-740 info linkStuff loose-envify@1.2.0
-741 silly linkStuff loose-envify@1.2.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-742 verbose linkBins loose-envify@1.2.0
-743 verbose link bins [ { 'loose-envify': 'cli.js' },
-743 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/.bin',
-743 verbose link bins   false ]
-744 verbose linkMans loose-envify@1.2.0
-745 verbose rebuildBundles loose-envify@1.2.0
-746 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/loose-envify is being purged
-747 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/loose-envify
-748 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/loose-envify
-749 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-750 info install loose-envify@1.2.0
-751 info postinstall loose-envify@1.2.0
-752 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/nan
-753 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/nan
-754 info preinstall nan@2.3.5
-755 info linkStuff nan@2.3.5
-756 silly linkStuff nan@2.3.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-757 verbose linkBins nan@2.3.5
-758 verbose linkMans nan@2.3.5
-759 verbose rebuildBundles nan@2.3.5
-760 info install nan@2.3.5
-761 info postinstall nan@2.3.5
-762 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/node-fetch
-763 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/node-fetch
-764 info preinstall node-fetch@1.6.3
-765 info linkStuff node-fetch@1.6.3
-766 silly linkStuff node-fetch@1.6.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-767 verbose linkBins node-fetch@1.6.3
-768 verbose linkMans node-fetch@1.6.3
-769 verbose rebuildBundles node-fetch@1.6.3
-770 info install node-fetch@1.6.3
-771 info postinstall node-fetch@1.6.3
-772 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm
-773 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm
-774 info preinstall npm@3.10.7
-775 info linkStuff npm@3.10.7
-776 silly linkStuff npm@3.10.7 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-777 warn prefer global npm@3.10.7 should be installed with -g
-778 verbose linkBins npm@3.10.7
-779 verbose link bins [ { npm: './bin/npm-cli.js' },
-779 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/.bin',
-779 verbose link bins   false ]
-780 verbose linkMans npm@3.10.7
-781 verbose rebuildBundles npm@3.10.7
-782 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/npm is being purged
-783 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/npm
-784 verbose rebuildBundles [ '.bin',
-784 verbose rebuildBundles   'abbrev',
-784 verbose rebuildBundles   'ansi-regex',
-784 verbose rebuildBundles   'ansicolors',
-784 verbose rebuildBundles   'ansistyles',
-784 verbose rebuildBundles   'aproba',
-784 verbose rebuildBundles   'archy',
-784 verbose rebuildBundles   'asap',
-784 verbose rebuildBundles   'chownr',
-784 verbose rebuildBundles   'cmd-shim',
-784 verbose rebuildBundles   'columnify',
-784 verbose rebuildBundles   'config-chain',
-784 verbose rebuildBundles   'debuglog',
-784 verbose rebuildBundles   'dezalgo',
-784 verbose rebuildBundles   'editor',
-784 verbose rebuildBundles   'fs-vacuum',
-784 verbose rebuildBundles   'fs-write-stream-atomic',
-784 verbose rebuildBundles   'fstream',
-784 verbose rebuildBundles   'fstream-npm',
-784 verbose rebuildBundles   'glob',
-784 verbose rebuildBundles   'graceful-fs',
-784 verbose rebuildBundles   'has-unicode',
-784 verbose rebuildBundles   'hosted-git-info',
-784 verbose rebuildBundles   'iferr',
-784 verbose rebuildBundles   'imurmurhash',
-784 verbose rebuildBundles   'inflight',
-784 verbose rebuildBundles   'inherits',
-784 verbose rebuildBundles   'ini',
-784 verbose rebuildBundles   'init-package-json',
-784 verbose rebuildBundles   'lockfile',
-784 verbose rebuildBundles   'lodash._baseindexof',
-784 verbose rebuildBundles   'lodash._baseuniq',
-784 verbose rebuildBundles   'lodash._bindcallback',
-784 verbose rebuildBundles   'lodash._cacheindexof',
-784 verbose rebuildBundles   'lodash._createcache',
-784 verbose rebuildBundles   'lodash._getnative',
-784 verbose rebuildBundles   'lodash.clonedeep',
-784 verbose rebuildBundles   'lodash.restparam',
-784 verbose rebuildBundles   'lodash.union',
-784 verbose rebuildBundles   'lodash.uniq',
-784 verbose rebuildBundles   'lodash.without',
-784 verbose rebuildBundles   'mkdirp',
-784 verbose rebuildBundles   'node-gyp',
-784 verbose rebuildBundles   'nopt',
-784 verbose rebuildBundles   'normalize-git-url',
-784 verbose rebuildBundles   'normalize-package-data',
-784 verbose rebuildBundles   'npm-cache-filename',
-784 verbose rebuildBundles   'npm-install-checks',
-784 verbose rebuildBundles   'npm-package-arg',
-784 verbose rebuildBundles   'npm-registry-client',
-784 verbose rebuildBundles   'npm-user-validate',
-784 verbose rebuildBundles   'npmlog',
-784 verbose rebuildBundles   'once',
-784 verbose rebuildBundles   'opener',
-784 verbose rebuildBundles   'osenv',
-784 verbose rebuildBundles   'path-is-inside',
-784 verbose rebuildBundles   'read',
-784 verbose rebuildBundles   'read-cmd-shim',
-784 verbose rebuildBundles   'read-installed',
-784 verbose rebuildBundles   'read-package-json',
-784 verbose rebuildBundles   'read-package-tree',
-784 verbose rebuildBundles   'readable-stream',
-784 verbose rebuildBundles   'readdir-scoped-modules',
-784 verbose rebuildBundles   'realize-package-specifier',
-784 verbose rebuildBundles   'request',
-784 verbose rebuildBundles   'retry',
-784 verbose rebuildBundles   'rimraf',
-784 verbose rebuildBundles   'semver',
-784 verbose rebuildBundles   'sha',
-784 verbose rebuildBundles   'slide',
-784 verbose rebuildBundles   'sorted-object',
-784 verbose rebuildBundles   'strip-ansi',
-784 verbose rebuildBundles   'tar',
-784 verbose rebuildBundles   'text-table',
-784 verbose rebuildBundles   'uid-number',
-784 verbose rebuildBundles   'umask',
-784 verbose rebuildBundles   'unique-filename',
-784 verbose rebuildBundles   'unpipe',
-784 verbose rebuildBundles   'validate-npm-package-license',
-784 verbose rebuildBundles   'validate-npm-package-name',
-784 verbose rebuildBundles   'which',
-784 verbose rebuildBundles   'wrappy',
-784 verbose rebuildBundles   'write-file-atomic' ]
-785 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/abbrev
-786 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin/npm
-787 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/abbrev
-788 info preinstall abbrev@1.0.9
-789 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/.bin
-790 info linkStuff abbrev@1.0.9
-791 silly linkStuff abbrev@1.0.9 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-792 verbose linkBins abbrev@1.0.9
-793 verbose linkMans abbrev@1.0.9
-794 verbose rebuildBundles abbrev@1.0.9
-795 info install abbrev@1.0.9
-796 info postinstall abbrev@1.0.9
-797 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ansi-regex
-798 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ansi-regex
-799 info preinstall ansi-regex@2.0.0
-800 info linkStuff ansi-regex@2.0.0
-801 silly linkStuff ansi-regex@2.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-802 verbose linkBins ansi-regex@2.0.0
-803 verbose linkMans ansi-regex@2.0.0
-804 verbose rebuildBundles ansi-regex@2.0.0
-805 info install ansi-regex@2.0.0
-806 info postinstall ansi-regex@2.0.0
-807 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ansicolors
-808 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ansicolors
-809 info preinstall ansicolors@0.3.2
-810 info linkStuff ansicolors@0.3.2
-811 silly linkStuff ansicolors@0.3.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-812 verbose linkBins ansicolors@0.3.2
-813 verbose linkMans ansicolors@0.3.2
-814 verbose rebuildBundles ansicolors@0.3.2
-815 info install ansicolors@0.3.2
-816 info postinstall ansicolors@0.3.2
-817 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ansistyles
-818 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ansistyles
-819 info preinstall ansistyles@0.1.3
-820 info linkStuff ansistyles@0.1.3
-821 silly linkStuff ansistyles@0.1.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-822 verbose linkBins ansistyles@0.1.3
-823 verbose linkMans ansistyles@0.1.3
-824 verbose rebuildBundles ansistyles@0.1.3
-825 info install ansistyles@0.1.3
-826 info postinstall ansistyles@0.1.3
-827 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/aproba
-828 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/aproba
-829 info preinstall aproba@1.0.4
-830 info linkStuff aproba@1.0.4
-831 silly linkStuff aproba@1.0.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-832 verbose linkBins aproba@1.0.4
-833 verbose linkMans aproba@1.0.4
-834 verbose rebuildBundles aproba@1.0.4
-835 info install aproba@1.0.4
-836 info postinstall aproba@1.0.4
-837 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/archy
-838 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/archy
-839 info preinstall archy@1.0.0
-840 info linkStuff archy@1.0.0
-841 silly linkStuff archy@1.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-842 verbose linkBins archy@1.0.0
-843 verbose linkMans archy@1.0.0
-844 verbose rebuildBundles archy@1.0.0
-845 info install archy@1.0.0
-846 info postinstall archy@1.0.0
-847 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/asap
-848 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/asap
-849 info preinstall asap@2.0.4
-850 info linkStuff asap@2.0.4
-851 silly linkStuff asap@2.0.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-852 verbose linkBins asap@2.0.4
-853 verbose linkMans asap@2.0.4
-854 verbose rebuildBundles asap@2.0.4
-855 info install asap@2.0.4
-856 info postinstall asap@2.0.4
-857 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/chownr
-858 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/chownr
-859 info preinstall chownr@1.0.1
-860 info linkStuff chownr@1.0.1
-861 silly linkStuff chownr@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-862 verbose linkBins chownr@1.0.1
-863 verbose linkMans chownr@1.0.1
-864 verbose rebuildBundles chownr@1.0.1
-865 info install chownr@1.0.1
-866 info postinstall chownr@1.0.1
-867 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/cmd-shim
-868 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/cmd-shim
-869 info preinstall cmd-shim@2.0.2
-870 info linkStuff cmd-shim@2.0.2
-871 silly linkStuff cmd-shim@2.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-872 verbose linkBins cmd-shim@2.0.2
-873 verbose linkMans cmd-shim@2.0.2
-874 verbose rebuildBundles cmd-shim@2.0.2
-875 info install cmd-shim@2.0.2
-876 info postinstall cmd-shim@2.0.2
-877 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/columnify
-878 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/columnify
-879 info preinstall columnify@1.5.4
-880 info linkStuff columnify@1.5.4
-881 silly linkStuff columnify@1.5.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-882 verbose linkBins columnify@1.5.4
-883 verbose linkMans columnify@1.5.4
-884 verbose rebuildBundles columnify@1.5.4
-885 verbose rebuildBundles [ 'wcwidth' ]
-886 info install columnify@1.5.4
-887 info postinstall columnify@1.5.4
-888 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/config-chain
-889 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/config-chain
-890 info preinstall config-chain@1.1.10
-891 info linkStuff config-chain@1.1.10
-892 silly linkStuff config-chain@1.1.10 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-893 verbose linkBins config-chain@1.1.10
-894 verbose linkMans config-chain@1.1.10
-895 verbose rebuildBundles config-chain@1.1.10
-896 verbose rebuildBundles [ 'proto-list' ]
-897 info install config-chain@1.1.10
-898 info postinstall config-chain@1.1.10
-899 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/debuglog
-900 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/debuglog
-901 info preinstall debuglog@1.0.1
-902 info linkStuff debuglog@1.0.1
-903 silly linkStuff debuglog@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-904 verbose linkBins debuglog@1.0.1
-905 verbose linkMans debuglog@1.0.1
-906 verbose rebuildBundles debuglog@1.0.1
-907 info install debuglog@1.0.1
-908 info postinstall debuglog@1.0.1
-909 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/dezalgo
-910 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/dezalgo
-911 info preinstall dezalgo@1.0.3
-912 info linkStuff dezalgo@1.0.3
-913 silly linkStuff dezalgo@1.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-914 verbose linkBins dezalgo@1.0.3
-915 verbose linkMans dezalgo@1.0.3
-916 verbose rebuildBundles dezalgo@1.0.3
-917 info install dezalgo@1.0.3
-918 info postinstall dezalgo@1.0.3
-919 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/editor
-920 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/editor
-921 info preinstall editor@1.0.0
-922 info linkStuff editor@1.0.0
-923 silly linkStuff editor@1.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-924 verbose linkBins editor@1.0.0
-925 verbose linkMans editor@1.0.0
-926 verbose rebuildBundles editor@1.0.0
-927 info install editor@1.0.0
-928 info postinstall editor@1.0.0
-929 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fs-vacuum
-930 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fs-vacuum
-931 info preinstall fs-vacuum@1.2.9
-932 info linkStuff fs-vacuum@1.2.9
-933 silly linkStuff fs-vacuum@1.2.9 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-934 verbose linkBins fs-vacuum@1.2.9
-935 verbose linkMans fs-vacuum@1.2.9
-936 verbose rebuildBundles fs-vacuum@1.2.9
-937 info install fs-vacuum@1.2.9
-938 info postinstall fs-vacuum@1.2.9
-939 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fs-write-stream-atomic
-940 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fs-write-stream-atomic
-941 info preinstall fs-write-stream-atomic@1.0.8
-942 info linkStuff fs-write-stream-atomic@1.0.8
-943 silly linkStuff fs-write-stream-atomic@1.0.8 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-944 verbose linkBins fs-write-stream-atomic@1.0.8
-945 verbose linkMans fs-write-stream-atomic@1.0.8
-946 verbose rebuildBundles fs-write-stream-atomic@1.0.8
-947 info install fs-write-stream-atomic@1.0.8
-948 info postinstall fs-write-stream-atomic@1.0.8
-949 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fstream
-950 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fstream
-951 info preinstall fstream@1.0.10
-952 info linkStuff fstream@1.0.10
-953 silly linkStuff fstream@1.0.10 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-954 verbose linkBins fstream@1.0.10
-955 verbose linkMans fstream@1.0.10
-956 verbose rebuildBundles fstream@1.0.10
-957 info install fstream@1.0.10
-958 info postinstall fstream@1.0.10
-959 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fstream-npm
-960 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/fstream-npm
-961 info preinstall fstream-npm@1.1.1
-962 info linkStuff fstream-npm@1.1.1
-963 silly linkStuff fstream-npm@1.1.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-964 verbose linkBins fstream-npm@1.1.1
-965 verbose linkMans fstream-npm@1.1.1
-966 verbose rebuildBundles fstream-npm@1.1.1
-967 verbose rebuildBundles [ 'fstream-ignore' ]
-968 info install fstream-npm@1.1.1
-969 info postinstall fstream-npm@1.1.1
-970 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/glob
-971 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/glob
-972 info preinstall glob@7.0.5
-973 info linkStuff glob@7.0.5
-974 silly linkStuff glob@7.0.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-975 verbose linkBins glob@7.0.5
-976 verbose linkMans glob@7.0.5
-977 verbose rebuildBundles glob@7.0.5
-978 verbose rebuildBundles [ 'fs.realpath', 'minimatch', 'path-is-absolute' ]
-979 info install glob@7.0.5
-980 info postinstall glob@7.0.5
-981 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/graceful-fs
-982 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/graceful-fs
-983 info preinstall graceful-fs@4.1.5
-984 info linkStuff graceful-fs@4.1.5
-985 silly linkStuff graceful-fs@4.1.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-986 verbose linkBins graceful-fs@4.1.5
-987 verbose linkMans graceful-fs@4.1.5
-988 verbose rebuildBundles graceful-fs@4.1.5
-989 info install graceful-fs@4.1.5
-990 info postinstall graceful-fs@4.1.5
-991 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/has-unicode
-992 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/has-unicode
-993 info preinstall has-unicode@2.0.1
-994 info linkStuff has-unicode@2.0.1
-995 silly linkStuff has-unicode@2.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-996 verbose linkBins has-unicode@2.0.1
-997 verbose linkMans has-unicode@2.0.1
-998 verbose rebuildBundles has-unicode@2.0.1
-999 info install has-unicode@2.0.1
-1000 info postinstall has-unicode@2.0.1
-1001 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/hosted-git-info
-1002 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/hosted-git-info
-1003 info preinstall hosted-git-info@2.1.5
-1004 info linkStuff hosted-git-info@2.1.5
-1005 silly linkStuff hosted-git-info@2.1.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1006 verbose linkBins hosted-git-info@2.1.5
-1007 verbose linkMans hosted-git-info@2.1.5
-1008 verbose rebuildBundles hosted-git-info@2.1.5
-1009 info install hosted-git-info@2.1.5
-1010 info postinstall hosted-git-info@2.1.5
-1011 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/iferr
-1012 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/iferr
-1013 info preinstall iferr@0.1.5
-1014 info linkStuff iferr@0.1.5
-1015 silly linkStuff iferr@0.1.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1016 verbose linkBins iferr@0.1.5
-1017 verbose linkMans iferr@0.1.5
-1018 verbose rebuildBundles iferr@0.1.5
-1019 info install iferr@0.1.5
-1020 info postinstall iferr@0.1.5
-1021 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/imurmurhash
-1022 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/imurmurhash
-1023 info preinstall imurmurhash@0.1.4
-1024 info linkStuff imurmurhash@0.1.4
-1025 silly linkStuff imurmurhash@0.1.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1026 verbose linkBins imurmurhash@0.1.4
-1027 verbose linkMans imurmurhash@0.1.4
-1028 verbose rebuildBundles imurmurhash@0.1.4
-1029 info install imurmurhash@0.1.4
-1030 info postinstall imurmurhash@0.1.4
-1031 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/inflight
-1032 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/inflight
-1033 info preinstall inflight@1.0.5
-1034 info linkStuff inflight@1.0.5
-1035 silly linkStuff inflight@1.0.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1036 verbose linkBins inflight@1.0.5
-1037 verbose linkMans inflight@1.0.5
-1038 verbose rebuildBundles inflight@1.0.5
-1039 info install inflight@1.0.5
-1040 info postinstall inflight@1.0.5
-1041 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/inherits
-1042 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/inherits
-1043 info preinstall inherits@2.0.1
-1044 info linkStuff inherits@2.0.1
-1045 silly linkStuff inherits@2.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1046 verbose linkBins inherits@2.0.1
-1047 verbose linkMans inherits@2.0.1
-1048 verbose rebuildBundles inherits@2.0.1
-1049 info install inherits@2.0.1
-1050 info postinstall inherits@2.0.1
-1051 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ini
-1052 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/ini
-1053 info preinstall ini@1.3.4
-1054 info linkStuff ini@1.3.4
-1055 silly linkStuff ini@1.3.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1056 verbose linkBins ini@1.3.4
-1057 verbose linkMans ini@1.3.4
-1058 verbose rebuildBundles ini@1.3.4
-1059 info install ini@1.3.4
-1060 info postinstall ini@1.3.4
-1061 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/init-package-json
-1062 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/init-package-json
-1063 info preinstall init-package-json@1.9.4
-1064 info linkStuff init-package-json@1.9.4
-1065 silly linkStuff init-package-json@1.9.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1066 verbose linkBins init-package-json@1.9.4
-1067 verbose linkMans init-package-json@1.9.4
-1068 verbose rebuildBundles init-package-json@1.9.4
-1069 verbose rebuildBundles [ 'glob', 'promzard' ]
-1070 info install init-package-json@1.9.4
-1071 info postinstall init-package-json@1.9.4
-1072 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lockfile
-1073 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lockfile
-1074 info preinstall lockfile@1.0.1
-1075 info linkStuff lockfile@1.0.1
-1076 silly linkStuff lockfile@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1077 verbose linkBins lockfile@1.0.1
-1078 verbose linkMans lockfile@1.0.1
-1079 verbose rebuildBundles lockfile@1.0.1
-1080 info install lockfile@1.0.1
-1081 info postinstall lockfile@1.0.1
-1082 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._baseindexof
-1083 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._baseindexof
-1084 info preinstall lodash._baseindexof@3.1.0
-1085 info linkStuff lodash._baseindexof@3.1.0
-1086 silly linkStuff lodash._baseindexof@3.1.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1087 verbose linkBins lodash._baseindexof@3.1.0
-1088 verbose linkMans lodash._baseindexof@3.1.0
-1089 verbose rebuildBundles lodash._baseindexof@3.1.0
-1090 info install lodash._baseindexof@3.1.0
-1091 info postinstall lodash._baseindexof@3.1.0
-1092 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._baseuniq
-1093 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._baseuniq
-1094 info preinstall lodash._baseuniq@4.6.0
-1095 info linkStuff lodash._baseuniq@4.6.0
-1096 silly linkStuff lodash._baseuniq@4.6.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1097 verbose linkBins lodash._baseuniq@4.6.0
-1098 verbose linkMans lodash._baseuniq@4.6.0
-1099 verbose rebuildBundles lodash._baseuniq@4.6.0
-1100 verbose rebuildBundles [ 'lodash._createset', 'lodash._root' ]
-1101 info install lodash._baseuniq@4.6.0
-1102 info postinstall lodash._baseuniq@4.6.0
-1103 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._bindcallback
-1104 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._bindcallback
-1105 info preinstall lodash._bindcallback@3.0.1
-1106 info linkStuff lodash._bindcallback@3.0.1
-1107 silly linkStuff lodash._bindcallback@3.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1108 verbose linkBins lodash._bindcallback@3.0.1
-1109 verbose linkMans lodash._bindcallback@3.0.1
-1110 verbose rebuildBundles lodash._bindcallback@3.0.1
-1111 info install lodash._bindcallback@3.0.1
-1112 info postinstall lodash._bindcallback@3.0.1
-1113 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._cacheindexof
-1114 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._cacheindexof
-1115 info preinstall lodash._cacheindexof@3.0.2
-1116 info linkStuff lodash._cacheindexof@3.0.2
-1117 silly linkStuff lodash._cacheindexof@3.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1118 verbose linkBins lodash._cacheindexof@3.0.2
-1119 verbose linkMans lodash._cacheindexof@3.0.2
-1120 verbose rebuildBundles lodash._cacheindexof@3.0.2
-1121 info install lodash._cacheindexof@3.0.2
-1122 info postinstall lodash._cacheindexof@3.0.2
-1123 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._createcache
-1124 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._createcache
-1125 info preinstall lodash._createcache@3.1.2
-1126 info linkStuff lodash._createcache@3.1.2
-1127 silly linkStuff lodash._createcache@3.1.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1128 verbose linkBins lodash._createcache@3.1.2
-1129 verbose linkMans lodash._createcache@3.1.2
-1130 verbose rebuildBundles lodash._createcache@3.1.2
-1131 info install lodash._createcache@3.1.2
-1132 info postinstall lodash._createcache@3.1.2
-1133 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._getnative
-1134 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash._getnative
-1135 info preinstall lodash._getnative@3.9.1
-1136 info linkStuff lodash._getnative@3.9.1
-1137 silly linkStuff lodash._getnative@3.9.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1138 verbose linkBins lodash._getnative@3.9.1
-1139 verbose linkMans lodash._getnative@3.9.1
-1140 verbose rebuildBundles lodash._getnative@3.9.1
-1141 info install lodash._getnative@3.9.1
-1142 info postinstall lodash._getnative@3.9.1
-1143 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.clonedeep
-1144 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.clonedeep
-1145 info preinstall lodash.clonedeep@4.4.1
-1146 info linkStuff lodash.clonedeep@4.4.1
-1147 silly linkStuff lodash.clonedeep@4.4.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1148 verbose linkBins lodash.clonedeep@4.4.1
-1149 verbose linkMans lodash.clonedeep@4.4.1
-1150 verbose rebuildBundles lodash.clonedeep@4.4.1
-1151 info install lodash.clonedeep@4.4.1
-1152 info postinstall lodash.clonedeep@4.4.1
-1153 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.restparam
-1154 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.restparam
-1155 info preinstall lodash.restparam@3.6.1
-1156 info linkStuff lodash.restparam@3.6.1
-1157 silly linkStuff lodash.restparam@3.6.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1158 verbose linkBins lodash.restparam@3.6.1
-1159 verbose linkMans lodash.restparam@3.6.1
-1160 verbose rebuildBundles lodash.restparam@3.6.1
-1161 info install lodash.restparam@3.6.1
-1162 info postinstall lodash.restparam@3.6.1
-1163 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.union
-1164 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.union
-1165 info preinstall lodash.union@4.5.0
-1166 info linkStuff lodash.union@4.5.0
-1167 silly linkStuff lodash.union@4.5.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1168 verbose linkBins lodash.union@4.5.0
-1169 verbose linkMans lodash.union@4.5.0
-1170 verbose rebuildBundles lodash.union@4.5.0
-1171 info install lodash.union@4.5.0
-1172 info postinstall lodash.union@4.5.0
-1173 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.uniq
-1174 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.uniq
-1175 info preinstall lodash.uniq@4.4.0
-1176 info linkStuff lodash.uniq@4.4.0
-1177 silly linkStuff lodash.uniq@4.4.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1178 verbose linkBins lodash.uniq@4.4.0
-1179 verbose linkMans lodash.uniq@4.4.0
-1180 verbose rebuildBundles lodash.uniq@4.4.0
-1181 info install lodash.uniq@4.4.0
-1182 info postinstall lodash.uniq@4.4.0
-1183 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.without
-1184 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/lodash.without
-1185 info preinstall lodash.without@4.3.0
-1186 info linkStuff lodash.without@4.3.0
-1187 silly linkStuff lodash.without@4.3.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1188 verbose linkBins lodash.without@4.3.0
-1189 verbose linkMans lodash.without@4.3.0
-1190 verbose rebuildBundles lodash.without@4.3.0
-1191 info install lodash.without@4.3.0
-1192 info postinstall lodash.without@4.3.0
-1193 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/mkdirp
-1194 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/mkdirp
-1195 info preinstall mkdirp@0.5.1
-1196 info linkStuff mkdirp@0.5.1
-1197 silly linkStuff mkdirp@0.5.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1198 verbose linkBins mkdirp@0.5.1
-1199 verbose link bins [ { mkdirp: 'bin/cmd.js' },
-1199 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1199 verbose link bins   false ]
-1200 verbose linkMans mkdirp@0.5.1
-1201 verbose rebuildBundles mkdirp@0.5.1
-1202 verbose rebuildBundles [ 'minimist' ]
-1203 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/mkdirp is being purged
-1204 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/mkdirp
-1205 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/mkdirp
-1206 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1207 info install mkdirp@0.5.1
-1208 info postinstall mkdirp@0.5.1
-1209 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/node-gyp
-1210 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/node-gyp
-1211 info preinstall node-gyp@3.4.0
-1212 info linkStuff node-gyp@3.4.0
-1213 silly linkStuff node-gyp@3.4.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1214 verbose linkBins node-gyp@3.4.0
-1215 verbose link bins [ { 'node-gyp': './bin/node-gyp.js' },
-1215 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1215 verbose link bins   false ]
-1216 verbose linkMans node-gyp@3.4.0
-1217 verbose rebuildBundles node-gyp@3.4.0
-1218 verbose rebuildBundles [ 'minimatch', 'path-array' ]
-1219 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/node-gyp is being purged
-1220 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/node-gyp
-1221 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/node-gyp
-1222 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1223 info install node-gyp@3.4.0
-1224 info postinstall node-gyp@3.4.0
-1225 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/nopt
-1226 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/nopt
-1227 info preinstall nopt@3.0.6
-1228 info linkStuff nopt@3.0.6
-1229 silly linkStuff nopt@3.0.6 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1230 verbose linkBins nopt@3.0.6
-1231 verbose link bins [ { nopt: './bin/nopt.js' },
-1231 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1231 verbose link bins   false ]
-1232 verbose linkMans nopt@3.0.6
-1233 verbose rebuildBundles nopt@3.0.6
-1234 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/nopt is being purged
-1235 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/nopt
-1236 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/nopt
-1237 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1238 info install nopt@3.0.6
-1239 info postinstall nopt@3.0.6
-1240 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/normalize-git-url
-1241 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/normalize-git-url
-1242 info preinstall normalize-git-url@3.0.2
-1243 info linkStuff normalize-git-url@3.0.2
-1244 silly linkStuff normalize-git-url@3.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1245 verbose linkBins normalize-git-url@3.0.2
-1246 verbose linkMans normalize-git-url@3.0.2
-1247 verbose rebuildBundles normalize-git-url@3.0.2
-1248 info install normalize-git-url@3.0.2
-1249 info postinstall normalize-git-url@3.0.2
-1250 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/normalize-package-data
-1251 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/normalize-package-data
-1252 info preinstall normalize-package-data@2.3.5
-1253 info linkStuff normalize-package-data@2.3.5
-1254 silly linkStuff normalize-package-data@2.3.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1255 verbose linkBins normalize-package-data@2.3.5
-1256 verbose linkMans normalize-package-data@2.3.5
-1257 verbose rebuildBundles normalize-package-data@2.3.5
-1258 verbose rebuildBundles [ 'is-builtin-module' ]
-1259 info install normalize-package-data@2.3.5
-1260 info postinstall normalize-package-data@2.3.5
-1261 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-cache-filename
-1262 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-cache-filename
-1263 info preinstall npm-cache-filename@1.0.2
-1264 info linkStuff npm-cache-filename@1.0.2
-1265 silly linkStuff npm-cache-filename@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1266 verbose linkBins npm-cache-filename@1.0.2
-1267 verbose linkMans npm-cache-filename@1.0.2
-1268 verbose rebuildBundles npm-cache-filename@1.0.2
-1269 info install npm-cache-filename@1.0.2
-1270 info postinstall npm-cache-filename@1.0.2
-1271 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-install-checks
-1272 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-install-checks
-1273 info preinstall npm-install-checks@3.0.0
-1274 info linkStuff npm-install-checks@3.0.0
-1275 silly linkStuff npm-install-checks@3.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1276 verbose linkBins npm-install-checks@3.0.0
-1277 verbose linkMans npm-install-checks@3.0.0
-1278 verbose rebuildBundles npm-install-checks@3.0.0
-1279 info install npm-install-checks@3.0.0
-1280 info postinstall npm-install-checks@3.0.0
-1281 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-package-arg
-1282 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-package-arg
-1283 info preinstall npm-package-arg@4.2.0
-1284 info linkStuff npm-package-arg@4.2.0
-1285 silly linkStuff npm-package-arg@4.2.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1286 verbose linkBins npm-package-arg@4.2.0
-1287 verbose linkMans npm-package-arg@4.2.0
-1288 verbose rebuildBundles npm-package-arg@4.2.0
-1289 info install npm-package-arg@4.2.0
-1290 info postinstall npm-package-arg@4.2.0
-1291 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-registry-client
-1292 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-registry-client
-1293 info preinstall npm-registry-client@7.1.2
-1294 info linkStuff npm-registry-client@7.1.2
-1295 silly linkStuff npm-registry-client@7.1.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1296 verbose linkBins npm-registry-client@7.1.2
-1297 verbose linkMans npm-registry-client@7.1.2
-1298 verbose rebuildBundles npm-registry-client@7.1.2
-1299 verbose rebuildBundles [ 'concat-stream', 'retry' ]
-1300 info install npm-registry-client@7.1.2
-1301 info postinstall npm-registry-client@7.1.2
-1302 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-user-validate
-1303 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npm-user-validate
-1304 info preinstall npm-user-validate@0.1.5
-1305 info linkStuff npm-user-validate@0.1.5
-1306 silly linkStuff npm-user-validate@0.1.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1307 verbose linkBins npm-user-validate@0.1.5
-1308 verbose linkMans npm-user-validate@0.1.5
-1309 verbose rebuildBundles npm-user-validate@0.1.5
-1310 info install npm-user-validate@0.1.5
-1311 info postinstall npm-user-validate@0.1.5
-1312 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npmlog
-1313 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/npmlog
-1314 info preinstall npmlog@3.1.2
-1315 info linkStuff npmlog@3.1.2
-1316 silly linkStuff npmlog@3.1.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1317 verbose linkBins npmlog@3.1.2
-1318 verbose linkMans npmlog@3.1.2
-1319 verbose rebuildBundles npmlog@3.1.2
-1320 verbose rebuildBundles [ 'are-we-there-yet',
-1320 verbose rebuildBundles   'console-control-strings',
-1320 verbose rebuildBundles   'gauge',
-1320 verbose rebuildBundles   'set-blocking' ]
-1321 info install npmlog@3.1.2
-1322 info postinstall npmlog@3.1.2
-1323 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/once
-1324 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/once
-1325 info preinstall once@1.3.3
-1326 info linkStuff once@1.3.3
-1327 silly linkStuff once@1.3.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1328 verbose linkBins once@1.3.3
-1329 verbose linkMans once@1.3.3
-1330 verbose rebuildBundles once@1.3.3
-1331 info install once@1.3.3
-1332 info postinstall once@1.3.3
-1333 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/opener
-1334 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/opener
-1335 info preinstall opener@1.4.1
-1336 info linkStuff opener@1.4.1
-1337 silly linkStuff opener@1.4.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1338 verbose linkBins opener@1.4.1
-1339 verbose link bins [ { opener: 'opener.js' },
-1339 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1339 verbose link bins   false ]
-1340 verbose linkMans opener@1.4.1
-1341 verbose rebuildBundles opener@1.4.1
-1342 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/opener is being purged
-1343 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/opener
-1344 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/opener
-1345 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1346 info install opener@1.4.1
-1347 info postinstall opener@1.4.1
-1348 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/osenv
-1349 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/osenv
-1350 info preinstall osenv@0.1.3
-1351 info linkStuff osenv@0.1.3
-1352 silly linkStuff osenv@0.1.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1353 verbose linkBins osenv@0.1.3
-1354 verbose linkMans osenv@0.1.3
-1355 verbose rebuildBundles osenv@0.1.3
-1356 verbose rebuildBundles [ 'os-homedir', 'os-tmpdir' ]
-1357 info install osenv@0.1.3
-1358 info postinstall osenv@0.1.3
-1359 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/path-is-inside
-1360 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/path-is-inside
-1361 info preinstall path-is-inside@1.0.1
-1362 info linkStuff path-is-inside@1.0.1
-1363 silly linkStuff path-is-inside@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1364 verbose linkBins path-is-inside@1.0.1
-1365 verbose linkMans path-is-inside@1.0.1
-1366 verbose rebuildBundles path-is-inside@1.0.1
-1367 info install path-is-inside@1.0.1
-1368 info postinstall path-is-inside@1.0.1
-1369 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read
-1370 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read
-1371 info preinstall read@1.0.7
-1372 info linkStuff read@1.0.7
-1373 silly linkStuff read@1.0.7 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1374 verbose linkBins read@1.0.7
-1375 verbose linkMans read@1.0.7
-1376 verbose rebuildBundles read@1.0.7
-1377 verbose rebuildBundles [ 'mute-stream' ]
-1378 info install read@1.0.7
-1379 info postinstall read@1.0.7
-1380 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-cmd-shim
-1381 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-cmd-shim
-1382 info preinstall read-cmd-shim@1.0.1
-1383 info linkStuff read-cmd-shim@1.0.1
-1384 silly linkStuff read-cmd-shim@1.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1385 verbose linkBins read-cmd-shim@1.0.1
-1386 verbose linkMans read-cmd-shim@1.0.1
-1387 verbose rebuildBundles read-cmd-shim@1.0.1
-1388 info install read-cmd-shim@1.0.1
-1389 info postinstall read-cmd-shim@1.0.1
-1390 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-installed
-1391 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-installed
-1392 info preinstall read-installed@4.0.3
-1393 info linkStuff read-installed@4.0.3
-1394 silly linkStuff read-installed@4.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1395 verbose linkBins read-installed@4.0.3
-1396 verbose linkMans read-installed@4.0.3
-1397 verbose rebuildBundles read-installed@4.0.3
-1398 verbose rebuildBundles [ 'util-extend' ]
-1399 info install read-installed@4.0.3
-1400 info postinstall read-installed@4.0.3
-1401 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-package-json
-1402 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-package-json
-1403 info preinstall read-package-json@2.0.4
-1404 info linkStuff read-package-json@2.0.4
-1405 silly linkStuff read-package-json@2.0.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1406 verbose linkBins read-package-json@2.0.4
-1407 verbose linkMans read-package-json@2.0.4
-1408 verbose rebuildBundles read-package-json@2.0.4
-1409 verbose rebuildBundles [ 'glob', 'json-parse-helpfulerror' ]
-1410 info install read-package-json@2.0.4
-1411 info postinstall read-package-json@2.0.4
-1412 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-package-tree
-1413 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/read-package-tree
-1414 info preinstall read-package-tree@5.1.5
-1415 info linkStuff read-package-tree@5.1.5
-1416 silly linkStuff read-package-tree@5.1.5 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1417 verbose linkBins read-package-tree@5.1.5
-1418 verbose linkMans read-package-tree@5.1.5
-1419 verbose rebuildBundles read-package-tree@5.1.5
-1420 info install read-package-tree@5.1.5
-1421 info postinstall read-package-tree@5.1.5
-1422 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/readable-stream
-1423 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/readable-stream
-1424 info preinstall readable-stream@2.1.4
-1425 info linkStuff readable-stream@2.1.4
-1426 silly linkStuff readable-stream@2.1.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1427 verbose linkBins readable-stream@2.1.4
-1428 verbose linkMans readable-stream@2.1.4
-1429 verbose rebuildBundles readable-stream@2.1.4
-1430 verbose rebuildBundles [ 'buffer-shims',
-1430 verbose rebuildBundles   'core-util-is',
-1430 verbose rebuildBundles   'isarray',
-1430 verbose rebuildBundles   'process-nextick-args',
-1430 verbose rebuildBundles   'string_decoder',
-1430 verbose rebuildBundles   'util-deprecate' ]
-1431 info install readable-stream@2.1.4
-1432 info postinstall readable-stream@2.1.4
-1433 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/readdir-scoped-modules
-1434 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/readdir-scoped-modules
-1435 info preinstall readdir-scoped-modules@1.0.2
-1436 info linkStuff readdir-scoped-modules@1.0.2
-1437 silly linkStuff readdir-scoped-modules@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1438 verbose linkBins readdir-scoped-modules@1.0.2
-1439 verbose linkMans readdir-scoped-modules@1.0.2
-1440 verbose rebuildBundles readdir-scoped-modules@1.0.2
-1441 info install readdir-scoped-modules@1.0.2
-1442 info postinstall readdir-scoped-modules@1.0.2
-1443 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/realize-package-specifier
-1444 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/realize-package-specifier
-1445 info preinstall realize-package-specifier@3.0.3
-1446 info linkStuff realize-package-specifier@3.0.3
-1447 silly linkStuff realize-package-specifier@3.0.3 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1448 verbose linkBins realize-package-specifier@3.0.3
-1449 verbose linkMans realize-package-specifier@3.0.3
-1450 verbose rebuildBundles realize-package-specifier@3.0.3
-1451 info install realize-package-specifier@3.0.3
-1452 info postinstall realize-package-specifier@3.0.3
-1453 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/request
-1454 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/request
-1455 info preinstall request@2.74.0
-1456 info linkStuff request@2.74.0
-1457 silly linkStuff request@2.74.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1458 verbose linkBins request@2.74.0
-1459 verbose linkMans request@2.74.0
-1460 verbose rebuildBundles request@2.74.0
-1461 verbose rebuildBundles [ 'aws-sign2',
-1461 verbose rebuildBundles   'aws4',
-1461 verbose rebuildBundles   'bl',
-1461 verbose rebuildBundles   'caseless',
-1461 verbose rebuildBundles   'combined-stream',
-1461 verbose rebuildBundles   'extend',
-1461 verbose rebuildBundles   'forever-agent',
-1461 verbose rebuildBundles   'form-data',
-1461 verbose rebuildBundles   'har-validator',
-1461 verbose rebuildBundles   'hawk',
-1461 verbose rebuildBundles   'http-signature',
-1461 verbose rebuildBundles   'is-typedarray',
-1461 verbose rebuildBundles   'isstream',
-1461 verbose rebuildBundles   'json-stringify-safe',
-1461 verbose rebuildBundles   'mime-types',
-1461 verbose rebuildBundles   'node-uuid',
-1461 verbose rebuildBundles   'oauth-sign',
-1461 verbose rebuildBundles   'qs',
-1461 verbose rebuildBundles   'stringstream',
-1461 verbose rebuildBundles   'tough-cookie',
-1461 verbose rebuildBundles   'tunnel-agent' ]
-1462 info install request@2.74.0
-1463 info postinstall request@2.74.0
-1464 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/retry
-1465 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/retry
-1466 info preinstall retry@0.9.0
-1467 info linkStuff retry@0.9.0
-1468 silly linkStuff retry@0.9.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1469 verbose linkBins retry@0.9.0
-1470 verbose linkMans retry@0.9.0
-1471 verbose rebuildBundles retry@0.9.0
-1472 info install retry@0.9.0
-1473 info postinstall retry@0.9.0
-1474 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/rimraf
-1475 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/rimraf
-1476 info preinstall rimraf@2.5.4
-1477 info linkStuff rimraf@2.5.4
-1478 silly linkStuff rimraf@2.5.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1479 verbose linkBins rimraf@2.5.4
-1480 verbose link bins [ { rimraf: './bin.js' },
-1480 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1480 verbose link bins   false ]
-1481 verbose linkMans rimraf@2.5.4
-1482 verbose rebuildBundles rimraf@2.5.4
-1483 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/rimraf is being purged
-1484 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/rimraf
-1485 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/rimraf
-1486 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1487 info install rimraf@2.5.4
-1488 info postinstall rimraf@2.5.4
-1489 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/semver
-1490 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/semver
-1491 info preinstall semver@5.1.0
-1492 info linkStuff semver@5.1.0
-1493 silly linkStuff semver@5.1.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1494 verbose linkBins semver@5.1.0
-1495 verbose link bins [ { semver: './bin/semver' },
-1495 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1495 verbose link bins   false ]
-1496 verbose linkMans semver@5.1.0
-1497 verbose rebuildBundles semver@5.1.0
-1498 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/semver is being purged
-1499 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/semver
-1500 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/semver
-1501 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1502 info install semver@5.1.0
-1503 info postinstall semver@5.1.0
-1504 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/sha
-1505 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/sha
-1506 info preinstall sha@2.0.1
-1507 info linkStuff sha@2.0.1
-1508 silly linkStuff sha@2.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1509 verbose linkBins sha@2.0.1
-1510 verbose linkMans sha@2.0.1
-1511 verbose rebuildBundles sha@2.0.1
-1512 info install sha@2.0.1
-1513 info postinstall sha@2.0.1
-1514 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/slide
-1515 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/slide
-1516 info preinstall slide@1.1.6
-1517 info linkStuff slide@1.1.6
-1518 silly linkStuff slide@1.1.6 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1519 verbose linkBins slide@1.1.6
-1520 verbose linkMans slide@1.1.6
-1521 verbose rebuildBundles slide@1.1.6
-1522 info install slide@1.1.6
-1523 info postinstall slide@1.1.6
-1524 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/sorted-object
-1525 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/sorted-object
-1526 info preinstall sorted-object@2.0.0
-1527 info linkStuff sorted-object@2.0.0
-1528 silly linkStuff sorted-object@2.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1529 verbose linkBins sorted-object@2.0.0
-1530 verbose linkMans sorted-object@2.0.0
-1531 verbose rebuildBundles sorted-object@2.0.0
-1532 info install sorted-object@2.0.0
-1533 info postinstall sorted-object@2.0.0
-1534 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/strip-ansi
-1535 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/strip-ansi
-1536 info preinstall strip-ansi@3.0.1
-1537 info linkStuff strip-ansi@3.0.1
-1538 silly linkStuff strip-ansi@3.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1539 verbose linkBins strip-ansi@3.0.1
-1540 verbose linkMans strip-ansi@3.0.1
-1541 verbose rebuildBundles strip-ansi@3.0.1
-1542 info install strip-ansi@3.0.1
-1543 info postinstall strip-ansi@3.0.1
-1544 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/tar
-1545 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/tar
-1546 info preinstall tar@2.2.1
-1547 info linkStuff tar@2.2.1
-1548 silly linkStuff tar@2.2.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1549 verbose linkBins tar@2.2.1
-1550 verbose linkMans tar@2.2.1
-1551 verbose rebuildBundles tar@2.2.1
-1552 verbose rebuildBundles [ 'block-stream' ]
-1553 info install tar@2.2.1
-1554 info postinstall tar@2.2.1
-1555 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/text-table
-1556 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/text-table
-1557 info preinstall text-table@0.2.0
-1558 info linkStuff text-table@0.2.0
-1559 silly linkStuff text-table@0.2.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1560 verbose linkBins text-table@0.2.0
-1561 verbose linkMans text-table@0.2.0
-1562 verbose rebuildBundles text-table@0.2.0
-1563 info install text-table@0.2.0
-1564 info postinstall text-table@0.2.0
-1565 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/uid-number
-1566 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/uid-number
-1567 info preinstall uid-number@0.0.6
-1568 info linkStuff uid-number@0.0.6
-1569 silly linkStuff uid-number@0.0.6 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1570 verbose linkBins uid-number@0.0.6
-1571 verbose linkMans uid-number@0.0.6
-1572 verbose rebuildBundles uid-number@0.0.6
-1573 info install uid-number@0.0.6
-1574 info postinstall uid-number@0.0.6
-1575 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/umask
-1576 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/umask
-1577 info preinstall umask@1.1.0
-1578 info linkStuff umask@1.1.0
-1579 silly linkStuff umask@1.1.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1580 verbose linkBins umask@1.1.0
-1581 verbose linkMans umask@1.1.0
-1582 verbose rebuildBundles umask@1.1.0
-1583 info install umask@1.1.0
-1584 info postinstall umask@1.1.0
-1585 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/unique-filename
-1586 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/unique-filename
-1587 info preinstall unique-filename@1.1.0
-1588 info linkStuff unique-filename@1.1.0
-1589 silly linkStuff unique-filename@1.1.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1590 verbose linkBins unique-filename@1.1.0
-1591 verbose linkMans unique-filename@1.1.0
-1592 verbose rebuildBundles unique-filename@1.1.0
-1593 verbose rebuildBundles [ 'unique-slug' ]
-1594 info install unique-filename@1.1.0
-1595 info postinstall unique-filename@1.1.0
-1596 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/unpipe
-1597 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/unpipe
-1598 info preinstall unpipe@1.0.0
-1599 info linkStuff unpipe@1.0.0
-1600 silly linkStuff unpipe@1.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1601 verbose linkBins unpipe@1.0.0
-1602 verbose linkMans unpipe@1.0.0
-1603 verbose rebuildBundles unpipe@1.0.0
-1604 info install unpipe@1.0.0
-1605 info postinstall unpipe@1.0.0
-1606 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/validate-npm-package-license
-1607 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/validate-npm-package-license
-1608 info preinstall validate-npm-package-license@3.0.1
-1609 info linkStuff validate-npm-package-license@3.0.1
-1610 silly linkStuff validate-npm-package-license@3.0.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1611 verbose linkBins validate-npm-package-license@3.0.1
-1612 verbose linkMans validate-npm-package-license@3.0.1
-1613 verbose rebuildBundles validate-npm-package-license@3.0.1
-1614 verbose rebuildBundles [ 'spdx-correct', 'spdx-expression-parse' ]
-1615 info install validate-npm-package-license@3.0.1
-1616 info postinstall validate-npm-package-license@3.0.1
-1617 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/validate-npm-package-name
-1618 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/validate-npm-package-name
-1619 info preinstall validate-npm-package-name@2.2.2
-1620 info linkStuff validate-npm-package-name@2.2.2
-1621 silly linkStuff validate-npm-package-name@2.2.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1622 verbose linkBins validate-npm-package-name@2.2.2
-1623 verbose linkMans validate-npm-package-name@2.2.2
-1624 verbose rebuildBundles validate-npm-package-name@2.2.2
-1625 verbose rebuildBundles [ 'builtins' ]
-1626 info install validate-npm-package-name@2.2.2
-1627 info postinstall validate-npm-package-name@2.2.2
-1628 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/which
-1629 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/which
-1630 info preinstall which@1.2.10
-1631 info linkStuff which@1.2.10
-1632 silly linkStuff which@1.2.10 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1633 verbose linkBins which@1.2.10
-1634 verbose link bins [ { which: './bin/which' },
-1634 verbose link bins   '/Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin',
-1634 verbose link bins   false ]
-1635 verbose linkMans which@1.2.10
-1636 verbose rebuildBundles which@1.2.10
-1637 verbose rebuildBundles [ 'isexe' ]
-1638 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/which is being purged
-1639 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/which
-1640 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin/which
-1641 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/.bin
-1642 info install which@1.2.10
-1643 info postinstall which@1.2.10
-1644 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/wrappy
-1645 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/wrappy
-1646 info preinstall wrappy@1.0.2
-1647 info linkStuff wrappy@1.0.2
-1648 silly linkStuff wrappy@1.0.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1649 verbose linkBins wrappy@1.0.2
-1650 verbose linkMans wrappy@1.0.2
-1651 verbose rebuildBundles wrappy@1.0.2
-1652 info install wrappy@1.0.2
-1653 info postinstall wrappy@1.0.2
-1654 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/write-file-atomic
-1655 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules/write-file-atomic
-1656 info preinstall write-file-atomic@1.1.4
-1657 info linkStuff write-file-atomic@1.1.4
-1658 silly linkStuff write-file-atomic@1.1.4 has /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/node_modules as its parent node_modules
-1659 verbose linkBins write-file-atomic@1.1.4
-1660 verbose linkMans write-file-atomic@1.1.4
-1661 verbose rebuildBundles write-file-atomic@1.1.4
-1662 info install write-file-atomic@1.1.4
-1663 info postinstall write-file-atomic@1.1.4
-1664 info install npm@3.10.7
-1665 info postinstall npm@3.10.7
-1666 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/object-assign
-1667 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/object-assign
-1668 info preinstall object-assign@4.1.0
-1669 info linkStuff object-assign@4.1.0
-1670 silly linkStuff object-assign@4.1.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-1671 verbose linkBins object-assign@4.1.0
-1672 verbose linkMans object-assign@4.1.0
-1673 verbose rebuildBundles object-assign@4.1.0
-1674 info install object-assign@4.1.0
-1675 info postinstall object-assign@4.1.0
-1676 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/promise
-1677 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/promise
-1678 info preinstall promise@7.1.1
-1679 info linkStuff promise@7.1.1
-1680 silly linkStuff promise@7.1.1 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-1681 verbose linkBins promise@7.1.1
-1682 verbose linkMans promise@7.1.1
-1683 verbose rebuildBundles promise@7.1.1
-1684 info install promise@7.1.1
-1685 info postinstall promise@7.1.1
-1686 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/rw
-1687 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/rw
-1688 info preinstall rw@1.3.2
-1689 info linkStuff rw@1.3.2
-1690 silly linkStuff rw@1.3.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-1691 verbose linkBins rw@1.3.2
-1692 verbose linkMans rw@1.3.2
-1693 verbose rebuildBundles rw@1.3.2
-1694 info install rw@1.3.2
-1695 info postinstall rw@1.3.2
-1696 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/ua-parser-js
-1697 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/ua-parser-js
-1698 info preinstall ua-parser-js@0.7.10
-1699 info linkStuff ua-parser-js@0.7.10
-1700 silly linkStuff ua-parser-js@0.7.10 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-1701 verbose linkBins ua-parser-js@0.7.10
-1702 verbose linkMans ua-parser-js@0.7.10
-1703 verbose rebuildBundles ua-parser-js@0.7.10
-1704 info install ua-parser-js@0.7.10
-1705 info postinstall ua-parser-js@0.7.10
-1706 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/whatwg-fetch
-1707 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/whatwg-fetch
-1708 info preinstall whatwg-fetch@1.0.0
-1709 info linkStuff whatwg-fetch@1.0.0
-1710 silly linkStuff whatwg-fetch@1.0.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-1711 verbose linkBins whatwg-fetch@1.0.0
-1712 verbose linkMans whatwg-fetch@1.0.0
-1713 verbose rebuildBundles whatwg-fetch@1.0.0
-1714 info install whatwg-fetch@1.0.0
-1715 info postinstall whatwg-fetch@1.0.0
-1716 verbose rebuild bundle /Users/tw00089923/Desktop/kcr_pro/node_modules/xmlhttprequest
-1717 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/xmlhttprequest
-1718 info preinstall xmlhttprequest@1.8.0
-1719 info linkStuff xmlhttprequest@1.8.0
-1720 silly linkStuff xmlhttprequest@1.8.0 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
-1721 verbose linkBins xmlhttprequest@1.8.0
-1722 verbose linkMans xmlhttprequest@1.8.0
-1723 verbose rebuildBundles xmlhttprequest@1.8.0
-1724 info install xmlhttprequest@1.8.0
-1725 info postinstall xmlhttprequest@1.8.0
-1726 info install reddice@1.0.0
-1727 info postinstall reddice@1.0.0
-1728 info prepublish reddice@1.0.0
-1729 verbose validateInstall loading /Users/tw00089923/Desktop/kcr_pro/package.json for validation
-1730 verbose stack Error: The package react@15.1.0 does not satisfy its siblings' peerDependencies requirements!
-1730 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
-1730 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
-1730 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
-1730 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-1730 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-1730 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-1730 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-1730 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-1730 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-1730 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-1731 verbose cwd /Users/tw00089923/Desktop/kcr_pro
-1732 error Darwin 16.0.0
-1733 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
-1734 error node v4.6.0
-1735 error npm  v2.15.9
-1736 error code EPEERINVALID
-1737 error peerinvalid The package react@15.1.0 does not satisfy its siblings' peerDependencies requirements!
-1737 error peerinvalid Peer react-bootstrap@0.30.3 wants react@>=0.14.0
-1737 error peerinvalid Peer react-dom@15.3.2 wants react@^15.3.2
-1737 error peerinvalid Peer react-redux@4.4.5 wants react@^0.14.0 || ^15.0.0-0
-1737 error peerinvalid Peer react-router@2.8.1 wants react@^0.14.0 || ^15.0.0
-1738 verbose exit [ 1, true ]
+6 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/asap/package.json
+7 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/axios/package.json
+8 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-cli/package.json
+9 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-core/package.json
+10 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-loader/package.json
+11 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-preset-es2015/package.json
+12 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/babel-preset-react/package.json
+13 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bcrypt/package.json
+14 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bindings/package.json
+15 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/bluebird/package.json
+16 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/body-parser/package.json
+17 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/chartjs/package.json
+18 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/classnames/package.json
+19 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/commander/package.json
+20 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/core-js/package.json
+21 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/csv-parser/package.json
+22 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3/package.json
+23 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-array/package.json
+24 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-axis/package.json
+25 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-brush/package.json
+26 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-chord/package.json
+27 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-collection/package.json
+28 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-color/package.json
+29 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dispatch/package.json
+30 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-drag/package.json
+31 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-dsv/package.json
+32 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-ease/package.json
+33 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-force/package.json
+34 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-format/package.json
+35 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-geo/package.json
+36 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-hierarchy/package.json
+37 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-interpolate/package.json
+38 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-path/package.json
+39 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-polygon/package.json
+40 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-quadtree/package.json
+41 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-queue/package.json
+42 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-random/package.json
+43 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-request/package.json
+44 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-scale/package.json
+45 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-selection/package.json
+46 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-shape/package.json
+47 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time/package.json
+48 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-time-format/package.json
+49 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-timer/package.json
+50 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-transition/package.json
+51 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-voronoi/package.json
+52 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/d3-zoom/package.json
+53 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/encoding/package.json
+54 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/express/package.json
+55 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/fbjs/package.json
+56 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/graceful-readlink/package.json
+57 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/iconv-lite/package.json
+58 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/immutable/package.json
+59 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/install/package.json
+60 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/is-stream/package.json
+61 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/isomorphic-fetch/package.json
+62 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/js-tokens/package.json
+63 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/jsonwebtoken/package.json
+64 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/jwt-decode/package.json
+65 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/lodash/package.json
+66 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/loose-envify/package.json
+67 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/moment/package.json
+68 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/mongoose/package.json
+69 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/nan/package.json
+70 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/node-fetch/package.json
+71 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx/package.json
+72 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/nodemon/package.json
+73 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/npm/package.json
+74 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/object-assign/package.json
+75 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/pg/package.json
+76 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/promise/package.json
+77 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react/package.json
+78 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-bootstrap/package.json
+79 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-dom/package.json
+80 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-hot-loader/package.json
+81 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-redux/package.json
+82 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/react-router/package.json
+83 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/redux/package.json
+84 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/redux-thunk/package.json
+85 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/rw/package.json
+86 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/shortid/package.json
+87 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/ua-parser-js/package.json
+88 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/validator/package.json
+89 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack/package.json
+90 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack-dev-middleware/package.json
+91 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/webpack-hot-middleware/package.json
+92 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/whatwg-fetch/package.json
+93 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/xlsx/package.json
+94 verbose installManyTop reading scoped package data from /Users/tw00089923/Desktop/kcr_pro/node_modules/xmlhttprequest/package.json
+95 verbose readDependencies loading dependencies from /Users/tw00089923/Desktop/kcr_pro/package.json
+96 verbose install node-xlsx is installed as 0.7.2
+97 silly cache add args [ 'node-xlsx', null ]
+98 verbose cache add spec node-xlsx
+99 silly cache add parsed spec Result {
+99 silly cache add   raw: 'node-xlsx',
+99 silly cache add   scope: null,
+99 silly cache add   name: 'node-xlsx',
+99 silly cache add   rawSpec: '',
+99 silly cache add   spec: 'latest',
+99 silly cache add   type: 'tag' }
+100 silly addNamed node-xlsx@latest
+101 verbose addNamed "latest" is being treated as a dist-tag for node-xlsx
+102 info addNameTag [ 'node-xlsx', 'latest' ]
+103 silly mapToRegistry name node-xlsx
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry data Result {
+106 silly mapToRegistry   raw: 'node-xlsx',
+106 silly mapToRegistry   scope: null,
+106 silly mapToRegistry   name: 'node-xlsx',
+106 silly mapToRegistry   rawSpec: '',
+106 silly mapToRegistry   spec: 'latest',
+106 silly mapToRegistry   type: 'tag' }
+107 silly mapToRegistry uri https://registry.npmjs.org/node-xlsx
+108 verbose addNameTag registry:https://registry.npmjs.org/node-xlsx not in flight; fetching
+109 verbose request uri https://registry.npmjs.org/node-xlsx
+110 verbose request no auth needed
+111 info attempt registry request try #1 at 22:30:44
+112 verbose request id 02efddcdc8f2a511
+113 verbose etag "45BXDLGLV49AJM5CAYTLYSRTI"
+114 http request GET https://registry.npmjs.org/node-xlsx
+115 http 304 https://registry.npmjs.org/node-xlsx
+116 verbose headers { date: 'Tue, 11 Oct 2016 14:30:44 GMT',
+116 verbose headers   via: '1.1 varnish',
+116 verbose headers   'cache-control': 'max-age=300',
+116 verbose headers   etag: '"45BXDLGLV49AJM5CAYTLYSRTI"',
+116 verbose headers   age: '17',
+116 verbose headers   connection: 'keep-alive',
+116 verbose headers   'x-served-by': 'cache-itm7427-ITM',
+116 verbose headers   'x-cache': 'HIT',
+116 verbose headers   'x-cache-hits': '1',
+116 verbose headers   'x-timer': 'S1476196244.854666,VS0,VE0',
+116 verbose headers   vary: 'Accept-Encoding' }
+117 silly get cb [ 304,
+117 silly get   { date: 'Tue, 11 Oct 2016 14:30:44 GMT',
+117 silly get     via: '1.1 varnish',
+117 silly get     'cache-control': 'max-age=300',
+117 silly get     etag: '"45BXDLGLV49AJM5CAYTLYSRTI"',
+117 silly get     age: '17',
+117 silly get     connection: 'keep-alive',
+117 silly get     'x-served-by': 'cache-itm7427-ITM',
+117 silly get     'x-cache': 'HIT',
+117 silly get     'x-cache-hits': '1',
+117 silly get     'x-timer': 'S1476196244.854666,VS0,VE0',
+117 silly get     vary: 'Accept-Encoding' } ]
+118 verbose etag https://registry.npmjs.org/node-xlsx from cache
+119 verbose get saving node-xlsx to /Users/tw00089923/.npm/registry.npmjs.org/node-xlsx/.cache.json
+120 verbose correctMkdir /Users/tw00089923/.npm correctMkdir not in flight; initializing
+121 silly addNameTag next cb for node-xlsx with tag latest
+122 silly addNamed node-xlsx@0.7.2
+123 verbose addNamed "0.7.2" is a plain semver version for node-xlsx
+124 silly cache afterAdd node-xlsx@0.7.2
+125 verbose afterAdd /Users/tw00089923/.npm/node-xlsx/0.7.2/package/package.json not in flight; writing
+126 verbose correctMkdir /Users/tw00089923/.npm correctMkdir not in flight; initializing
+127 verbose afterAdd /Users/tw00089923/.npm/node-xlsx/0.7.2/package/package.json written
+128 silly install resolved [ { name: 'node-xlsx',
+128 silly install resolved     author: { name: 'Olivier Louvignes', email: 'olivier@mg-crea.com' },
+128 silly install resolved     version: '0.7.2',
+128 silly install resolved     description: 'NodeJS Excel files parser & builder',
+128 silly install resolved     main: 'lib/index.js',
+128 silly install resolved     scripts:
+128 silly install resolved      { start: 'npm run test:watch',
+128 silly install resolved        test: 'mocha',
+128 silly install resolved        'test:watch': 'npm run test -- --watch',
+128 silly install resolved        'test:coverage': 'nyc --reporter=lcov npm test -- --reporter dot && nyc report',
+128 silly install resolved        lint: 'eslint src/',
+128 silly install resolved        compile: 'rimraf lib/*; babel src/ -d lib/ -s',
+128 silly install resolved        'compile:watch': 'npm run compile -- -w',
+128 silly install resolved        prepublish: 'npm run compile' },
+128 silly install resolved     repository:
+128 silly install resolved      { type: 'git',
+128 silly install resolved        url: 'git+https://github.com/mgcrea/node-xlsx.git' },
+128 silly install resolved     license: 'Apache-2.0',
+128 silly install resolved     dependencies: { xlsx: '^0.8.0' },
+128 silly install resolved     devDependencies:
+128 silly install resolved      { 'babel-cli': '^6.11.4',
+128 silly install resolved        'babel-eslint': '^6.1.2',
+128 silly install resolved        'babel-plugin-transform-class-properties': '^6.11.5',
+128 silly install resolved        'babel-plugin-transform-function-bind': '^6.8.0',
+128 silly install resolved        'babel-plugin-transform-object-rest-spread': '^6.8.0',
+128 silly install resolved        'babel-preset-es2015': '^6.13.2',
+128 silly install resolved        'babel-register': '^6.11.6',
+128 silly install resolved        'codeclimate-test-reporter': '^0.3.3',
+128 silly install resolved        eslint: '^3.3.1',
+128 silly install resolved        'eslint-config-airbnb-base': '^5.0.2',
+128 silly install resolved        'eslint-plugin-import': '^1.13.0',
+128 silly install resolved        'eslint-plugin-jsx-a11y': '^2.1.0',
+128 silly install resolved        expect: '^1.20.2',
+128 silly install resolved        mocha: '^3.0.2',
+128 silly install resolved        nyc: '^8.1.0',
+128 silly install resolved        rimraf: '^2.5.4' },
+128 silly install resolved     keywords: [ 'excel', 'parser', 'builder', 'xlsx', 'xls' ],
+128 silly install resolved     gitHead: 'bafd66de9870ed9bfe175f0b6da81cc1d38afe1c',
+128 silly install resolved     bugs: { url: 'https://github.com/mgcrea/node-xlsx/issues' },
+128 silly install resolved     homepage: 'https://github.com/mgcrea/node-xlsx#readme',
+128 silly install resolved     _id: 'node-xlsx@0.7.2',
+128 silly install resolved     _shasum: 'a6408e9cec5dd69e7fbcc769aa191253d379337d',
+128 silly install resolved     _from: 'node-xlsx@latest',
+128 silly install resolved     _npmVersion: '3.10.3',
+128 silly install resolved     _nodeVersion: '6.3.0',
+128 silly install resolved     _npmUser: { name: 'mgcrea', email: 'olivier@mg-crea.com' },
+128 silly install resolved     dist:
+128 silly install resolved      { shasum: 'a6408e9cec5dd69e7fbcc769aa191253d379337d',
+128 silly install resolved        tarball: 'https://registry.npmjs.org/node-xlsx/-/node-xlsx-0.7.2.tgz' },
+128 silly install resolved     maintainers: [ [Object] ],
+128 silly install resolved     _npmOperationalInternal:
+128 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+128 silly install resolved        tmp: 'tmp/node-xlsx-0.7.2.tgz_1471379694835_0.4213184188120067' },
+128 silly install resolved     directories: {},
+128 silly install resolved     _resolved: 'https://registry.npmjs.org/node-xlsx/-/node-xlsx-0.7.2.tgz',
+128 silly install resolved     readme: 'ERROR: No README data found!' } ]
+129 info install node-xlsx@0.7.2 into /Users/tw00089923/Desktop/kcr_pro
+130 info installOne node-xlsx@0.7.2
+131 verbose installOne of node-xlsx to /Users/tw00089923/Desktop/kcr_pro not in flight; installing
+132 verbose correctMkdir /Users/tw00089923/.npm/_locks correctMkdir not in flight; initializing
+133 verbose lock using /Users/tw00089923/.npm/_locks/node-xlsx-ef3c5f2ba3af9291.lock for /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+134 silly install write writing node-xlsx 0.7.2 to /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+135 verbose unbuild node_modules/node-xlsx
+136 info preuninstall node-xlsx@0.7.2
+137 info uninstall node-xlsx@0.7.2
+138 verbose unbuild rmStuff node-xlsx@0.7.2 from /Users/tw00089923/Desktop/kcr_pro/node_modules
+139 info postuninstall node-xlsx@0.7.2
+140 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx is being purged from base /Users/tw00089923/Desktop/kcr_pro
+141 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+142 silly vacuum-fs purging /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+143 silly vacuum-fs quitting because other entries in /Users/tw00089923/Desktop/kcr_pro/node_modules
+144 verbose tar unpack /Users/tw00089923/.npm/node-xlsx/0.7.2/package.tgz
+145 verbose tar unpacking to /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+146 silly gentlyRm /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx is being purged
+147 verbose gentlyRm don't care about contents; nuking /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+148 silly gunzTarPerm modes [ '755', '644' ]
+149 silly gunzTarPerm extractEntry package.json
+150 silly gunzTarPerm extractEntry .npmignore
+151 silly gunzTarPerm extractEntry README.md
+152 silly gunzTarPerm extractEntry .babelrc
+153 silly gunzTarPerm extractEntry .travis.yml
+154 silly gunzTarPerm extractEntry LICENSE.md
+155 silly gunzTarPerm extractEntry .eslintrc
+156 silly gunzTarPerm extractEntry lib/helpers.js
+157 silly gunzTarPerm extractEntry lib/index.js
+158 silly gunzTarPerm extractEntry lib/workbook.js
+159 silly gunzTarPerm extractEntry lib/helpers.js.map
+160 silly gunzTarPerm extractEntry lib/index.js.map
+161 silly gunzTarPerm extractEntry lib/workbook.js.map
+162 silly gunzTarPerm extractEntry src/helpers.js
+163 silly gunzTarPerm extractEntry src/index.js
+164 silly gunzTarPerm extractEntry src/workbook.js
+165 silly gunzTarPerm extractEntry test/.eslintrc
+166 silly gunzTarPerm extractEntry test/fixtures/test.json
+167 silly gunzTarPerm extractEntry test/fixtures/test.xlsx
+168 silly gunzTarPerm extractEntry test/mocha.opts
+169 silly gunzTarPerm extractEntry test/specs/build.spec.js
+170 silly gunzTarPerm extractEntry test/specs/parse.spec.js
+171 verbose write writing to /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx/package.json
+172 info preinstall node-xlsx@0.7.2
+173 verbose readDependencies loading dependencies from /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx/package.json
+174 verbose readDependencies loading dependencies from /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx/package.json
+175 silly install resolved []
+176 verbose about to build /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+177 info build /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+178 info linkStuff node-xlsx@0.7.2
+179 silly linkStuff node-xlsx@0.7.2 has /Users/tw00089923/Desktop/kcr_pro/node_modules as its parent node_modules
+180 verbose linkBins node-xlsx@0.7.2
+181 verbose linkMans node-xlsx@0.7.2
+182 verbose rebuildBundles node-xlsx@0.7.2
+183 info install node-xlsx@0.7.2
+184 info postinstall node-xlsx@0.7.2
+185 verbose unlock done using /Users/tw00089923/.npm/_locks/node-xlsx-ef3c5f2ba3af9291.lock for /Users/tw00089923/Desktop/kcr_pro/node_modules/node-xlsx
+186 verbose validateInstall loading /Users/tw00089923/Desktop/kcr_pro/package.json for validation
+187 verbose stack Error: The package react@15.1.0 does not satisfy its siblings' peerDependencies requirements!
+187 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+187 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+187 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+187 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+187 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+187 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+187 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+187 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+187 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+187 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+188 verbose cwd /Users/tw00089923/Desktop/kcr_pro
+189 error Darwin 16.0.0
+190 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node-xlsx"
+191 error node v4.6.0
+192 error npm  v2.15.9
+193 error code EPEERINVALID
+194 error peerinvalid The package react@15.1.0 does not satisfy its siblings' peerDependencies requirements!
+194 error peerinvalid Peer react-bootstrap@0.30.3 wants react@>=0.14.0
+194 error peerinvalid Peer react-dom@15.3.2 wants react@^15.3.2
+194 error peerinvalid Peer react-redux@4.4.5 wants react@^0.14.0 || ^15.0.0-0
+194 error peerinvalid Peer react-router@2.8.1 wants react@^0.14.0 || ^15.0.0
+195 verbose exit [ 1, true ]

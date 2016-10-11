@@ -7,7 +7,7 @@ class workPage extends React.Component {
   render() {
     
 
-  	const title = ( <div className=" text-center"> <strong><h1> 工作日報表 輸入</h1></strong> </div>);
+  	const title = ( <div className=" text-center"> <strong><h2> 工作日報表 輸入</h2></strong> </div>);
    	const date1 = moment("20111031", "YYYYMMDD").fromNow(); 
     return (
 
