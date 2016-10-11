@@ -68,7 +68,7 @@ class SignupForm extends React.Component {
             type: 'success',
             text: 'You signed up successfully. Welcome!'
           });
-          this.context.router.push('/');
+          this.context.router.push('/login');
         },
         (err) => this.setState({ errors: err.response.data, isLoading: false })
       );
@@ -76,14 +76,16 @@ class SignupForm extends React.Component {
   }
 
   render() {
+    
     const { errors } = this.state;
+
     const options = map(timezones, (val, key) =>
       <option key={val} value={val}>{key}</option>
     );
     return (
       <form onSubmit={this.onSubmit}>
         <h1>Join our community!</h1>
-
+   
         <TextFieldGroup
           error={errors.username}
           label="Username"

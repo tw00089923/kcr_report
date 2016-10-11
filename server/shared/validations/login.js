@@ -12,6 +12,7 @@ export default function validateInput(data) {
     errors.password = 'This field is required';
   }
 
+
   return {
     errors,
     isValid: isEmpty(errors)

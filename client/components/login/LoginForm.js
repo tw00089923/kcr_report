@@ -45,16 +45,16 @@ class LoginForm extends React.Component {
 
   render() {
     const { errors, identifier, password, isLoading } = this.state;
-
+    console.log(this);
     return (
       <form onSubmit={this.onSubmit}>
-        <h1>Login</h1>
+        <h1> 用戶登入 </h1>
 
         { errors.form && <div className="alert alert-danger">{errors.form}</div> }
-
+        
         <TextFieldGroup
           field="identifier"
-          label="Username / Email"
+          label="E-mail 登入"
           value={identifier}
           error={errors.identifier}
           onChange={this.onChange}
@@ -62,14 +62,14 @@ class LoginForm extends React.Component {
 
         <TextFieldGroup
           field="password"
-          label="Password"
+          label="密碼"
           value={password}
           error={errors.password}
           onChange={this.onChange}
           type="password"
         />
 
-        <div className="form-group"><button className="btn btn-primary btn-lg" disabled={isLoading}>Login</button></div>
+        <div className="form-group"><button className="btn btn-primary btn-lg" disabled={isLoading}>登入</button></div>
       </form>
     );
   }
