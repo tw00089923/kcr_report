@@ -33,7 +33,8 @@ router.post('/',(req,res)=>{
 			 res.status(401).json({ errors: { form: '密碼錯誤' } })
 		}else{
 			console.log(works);
-			 res.status(201).json({ work: works,  errors: { form: '密碼錯誤' }});
+			 res.status(201).json(works);
+
 		}
 	});
 		

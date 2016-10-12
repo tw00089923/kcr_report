@@ -1,4 +1,4 @@
-import { SET_WORK } from '../actions/types';
+import { SET_CURRENT_WORK } from '../actions/types';
 import isEmpty from 'lodash/isEmpty';
 
 const initialState = {
@@ -7,11 +7,10 @@ const initialState = {
 
 export default (state = initialState, action = {}) => {
   switch(action.type) {
-    case SET_WORK:
-      return {
-        work: action.work,
-        host: action.sas
-      };
+    case SET_CURRENT_WORK:
+      return [...state,{
+        work: action.works
+      }];
     default: return state;
   }
 }
