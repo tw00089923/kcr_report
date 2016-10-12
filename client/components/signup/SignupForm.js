@@ -13,7 +13,7 @@ class SignupForm extends React.Component {
       email: '',
       password: '',
       passwordConfirmation: '',
-      timezone: '',
+      department: '',
       errors: {},
       isLoading: false,
       invalid: false
@@ -84,11 +84,11 @@ class SignupForm extends React.Component {
     );
     return (
       <form onSubmit={this.onSubmit}>
-        <h1>Join our community!</h1>
+        <h1>歡迎加入KCR</h1>
    
         <TextFieldGroup
           error={errors.username}
-          label="Username"
+          label="使用者名稱"
           onChange={this.onChange}
           checkUserExists={this.checkUserExists}
           value={this.state.username}
@@ -106,7 +106,7 @@ class SignupForm extends React.Component {
 
         <TextFieldGroup
           error={errors.password}
-          label="Password"
+          label="密碼"
           onChange={this.onChange}
           value={this.state.password}
           field="password"
@@ -115,25 +115,25 @@ class SignupForm extends React.Component {
 
         <TextFieldGroup
           error={errors.passwordConfirmation}
-          label="Password Confirmation"
+          label="確認您的密碼"
           onChange={this.onChange}
           value={this.state.passwordConfirmation}
           field="passwordConfirmation"
           type="password"
         />
 
-        <div className={classnames("form-group", { 'has-error': errors.timezone })}>
-          <label className="control-label">Timezone</label>
+        <div className={classnames("form-group", { 'has-error': errors.department })}>
+          <label className="control-label">部門</label>
           <select
             className="form-control"
-            name="timezone"
+            name="department"
             onChange={this.onChange}
-            value={this.state.timezone}
+            value={this.state.department}
           >
-            <option value="" disabled>Choose Your Timezone</option>
+            <option value="" disabled>選擇您的部門</option>
             {options}
           </select>
-          {errors.timezone && <span className="help-block">{errors.timezone}</span>}
+          {errors.department && <span className="help-block">{errors.department}</span>}
         </div>
 
         <div className="form-group">

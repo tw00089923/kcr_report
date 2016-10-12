@@ -12,7 +12,7 @@ import auth from './routes/auth';
 import events from './routes/events';
 import work from './routes/work';
 import Work from './models/work';
-
+import bulebird from 'bluebird';
 import mongoose from 'mongoose';
 let app = express();
 
@@ -27,8 +27,7 @@ app.use('/api/events', events);
 app.use('/api/work', work);
 
 
-
-
+mongoose.Promise = require('bluebird');
 
 const compiler = webpack(webpackConfig);
 

@@ -44,7 +44,7 @@ router.get('/:identifier', (req, res) => {
 router.post('/', (req, res) => {
   validateInput(req.body, commonValidations).then(({ errors, isValid }) => {
     if (isValid) {
-      const { username, password, timezone, email } = req.body;
+      const { username, password, department, email } = req.body;
       const password_digest = bcrypt.hashSync(password, 10);
 
       const user = new User({ username,password_digest,timezone,email });
