@@ -14,10 +14,10 @@ function validateInput(data, otherValidations) {
      .then(user => {
     if (user) {
       if ( user.username === data.username) {
-        errors.username = 'There is user with such username';
+        errors.username = '有相同用戶';
       }
       if (user.email === data.email) {
-        errors.email = 'There is user with such email';
+        errors.email = '有相同郵件地址';
       }
     }
 
@@ -35,6 +35,7 @@ router.get('/:identifier', (req, res) => {
     
   }).then(user => {
     res.json({ user });
+
  
     
   });
@@ -47,7 +48,7 @@ router.post('/', (req, res) => {
       const { username, password, department, email } = req.body;
       const password_digest = bcrypt.hashSync(password, 10);
 
-      const user = new User({ username,password_digest,timezone,email });
+      const user = new User({ username,password_digest,department,email });
       user.save( ( err , data) => { 
         if(err){
             res.status(500).json({message:"insert DB errors"});

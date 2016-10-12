@@ -1,5 +1,5 @@
 import React from 'react';
-import timezones from '../../data/timezones';
+import department from '../../data/department';
 import map from 'lodash/map';
 import classnames from 'classnames';
 import validateInput from '../../../server/shared/validations/signup';
@@ -66,7 +66,7 @@ class SignupForm extends React.Component {
         () => {
           this.props.addFlashMessage({
             type: 'success',
-            text: 'You signed up successfully. Welcome!'
+            text: '歡迎登入'
           });
           this.context.router.push('/login');
         },
@@ -79,7 +79,7 @@ class SignupForm extends React.Component {
     
     const { errors } = this.state;
 
-    const options = map(timezones, (val, key) =>
+    const options = map(department, (val, key) =>
       <option key={val} value={val}>{key}</option>
     );
     return (

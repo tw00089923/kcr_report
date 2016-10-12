@@ -30,14 +30,14 @@ class NavigationBar extends React.Component {
   
 
   render() {
-    console.log(this.state);
+
     const { isAuthenticated ,user} = this.props.auth;
 //     const PopoverButton = (
 //   <Popover id="popover-positioned-scrolling-bottom" title="Popover bottom">
 //     <strong>Holy guacamole!</strong> Check this info.
 //   </Popover>
 // );
-    console.log(user);
+
 
  
     const pop1 = ( 

@@ -23,7 +23,23 @@ let router = express.Router();
 // router.get('/',(req,res) => {
 	
 // });
+router.get('/',(req,res)=>{
+	const { work } = req.body ;
+		console.log(work);
 
+	Work.findOne( work ,(err,works)=>{
+		if (err) {
+			console.log(err);
+			 res.status(401).json({ errors: { form: '密碼錯誤' } })
+		}else{
+			console.log(works);
+			 res.status(201).json({ work: works,  errors: { form: '密碼錯誤' }});
+		}
+	});
+		
+
+
+});
 
 router.post('/', (req, res) => {
 
@@ -64,7 +80,7 @@ router.post('/', (req, res) => {
   			}else{
   				
       		  res.json({ success: true });
-         	  console.log("ok");
+   
   			}
 
   		} );

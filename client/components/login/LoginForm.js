@@ -4,6 +4,7 @@ import validateInput from '../../../server/shared/validations/login';
 import { connect } from 'react-redux';
 import { login } from '../../actions/authActions';
 
+
 class LoginForm extends React.Component {
   constructor(props) {
     super(props);
@@ -33,7 +34,8 @@ class LoginForm extends React.Component {
     if (this.isValid()) {
       this.setState({ errors: {}, isLoading: true });
       this.props.login(this.state).then(
-        (res) => this.context.router.push('/'),
+        (res) => this.context.router.push('/')
+         ,
         (err) => this.setState({ errors: err.response.data.errors, isLoading: false })
       );
     }
@@ -45,7 +47,7 @@ class LoginForm extends React.Component {
 
   render() {
     const { errors, identifier, password, isLoading } = this.state;
-    console.log(this);
+
     return (
       <form onSubmit={this.onSubmit}>
         <h1> 用戶登入 </h1>
@@ -76,7 +78,8 @@ class LoginForm extends React.Component {
 }
 
 LoginForm.propTypes = {
-  login: React.PropTypes.func.isRequired
+  login: React.PropTypes.func.isRequired,
+
 }
 
 LoginForm.contextTypes = {

@@ -18,6 +18,8 @@ let app = express();
 
 app.use(bodyParser.json());
 
+// app.use(bodyParser.urlencoded({extended: false}));
+
 app.use('/api/users', users);
 
 app.use('/api/auth', auth);
@@ -26,6 +28,14 @@ app.use('/api/events', events);
 
 app.use('/api/work', work);
 
+ // mongodb 跑出 Promise 問題 
+ // Use native promises
+    // mongoose.Promise = global.Promise;
+ //    assert.equal(query.exec().constructor, global.Promise);
+
+ //    // Use bluebird
+ //    mongoose.Promise = require('bluebird');
+ //    assert.equal(query.exec().constructor, require('bluebird'));
 
 mongoose.Promise = require('bluebird');
 

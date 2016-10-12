@@ -16,8 +16,6 @@ const workSchema = new Schema({
   work_endtime: Date,
   work_line:Number,
   setuptime:Number
-
-
 });
 
 

@@ -27,7 +27,7 @@ router.post('/', (req, res) => {
 
 
  User.findOne( {$or:[{email:identifier},{ username:identifier}]} ).then(user =>{
-    console.log(user);
+  
     if (user) {
       if (bcrypt.compareSync(password, user.password_digest)) {
         const token = jwt.sign({

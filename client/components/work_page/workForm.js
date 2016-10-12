@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import workInput from '../../../server/shared/validations/workinput';
 
 import TextFieldGroup from '../common/TextFieldGroup';
-import { createWork } from '../../actions/workActions';
+import { createWork ,loadingwork} from '../../actions/workActions';
 import { Modal,Button } from 'react-bootstrap';
 import axios from 'axios';
 
@@ -33,14 +33,18 @@ class WorkForm extends React.Component {
     errors : {},
     invalid: false,
     show:false,
-    work:''
+    work:'',
+    worksearch:''
 
     };
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
     this.copy = this.copy.bind(this);
-    this.show = this.show.bind(this);  }
+    this.show = this.show.bind(this); 
+    this.upload = this.upload.bind(this); 
+
+     }
 
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
@@ -83,36 +87,28 @@ class WorkForm extends React.Component {
     
   }
 
-  render() {
-   
+  upload(){
+    this.props.loadingwork(this.state);
+    // this.setState({work_name:'u-02-M'  });
 
+  }
+
+  render() {
 
     const { errors }  = this.state;
-
-    const abc =( <label> abc ds</label>  );
-    console.log(this);
-
     const line = ['201','202','203','204','205','206','207','208','209','210','212'];
     const options = map(line, (val) =>
       <option key={val} value={val}>{val}</option>
-    ); 
-
-
+    );     
     return (
+      
 
 
-
-    
-
-      <form onSubmit={this.onSubmit} className="form-group" >
-   
+      <form onSubmit={this.onSubmit} className="form-group" >  
+  { errors.form }{this.state.work}
         <div className="form-group"> 
-
         <label className="control-label"> 
-        <input type="range" min="0" max="50" name="work" value={this.state.work} onChange={this.onChange }/></label> 
-
-
-
+        <input type="range" min="" max="50" name="work" value={this.state.work} onChange={this.onChange }/></label> 
         <label className="control-label">   線別  </label> 
          <select
             className="form-control col-md-3"
@@ -123,15 +119,13 @@ class WorkForm extends React.Component {
             <option value="" disabled>選線別</option>
             {options}
           </select>
-
-
-
-
-        
-       
-
        </div>
 
+  {this.state.worksearch}
+      <div className="form-group"> 
+      <input type="text" className="control-input " value={this.state.worksearch} name="worksearch" onChange={this.onChange}/>
+      <button onClick={this.upload} className="btn btn-primary btn-sm"> X </button> 
+      </div>
       
         <TextFieldGroup
           field="work_number"
@@ -139,9 +133,7 @@ class WorkForm extends React.Component {
           name="work_number"
           value={this.state.work_number}
           onChange={this.onChange}
-          error={errors.work_number}
-        
-        />
+          error={errors.work_number} />
   
          <TextFieldGroup
           field="work_name"
@@ -256,7 +248,7 @@ class WorkForm extends React.Component {
 
         
 
-        {this.state.work}
+   
 
 
 
@@ -298,8 +290,6 @@ WorkForm.contextTypes = {
 }
 
 
-export default connect(null, { createWork})(WorkForm);
-
-
+export default connect(null, { createWork , loadingwork })(WorkForm);
 
 
