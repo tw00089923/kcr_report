@@ -88,7 +88,7 @@ class WorkForm extends React.Component {
   }
 
   upload(){
-    this.props.loadingwork(this.state);
+    this.props.loadingwork(this.state.worksearch);
     // this.setState({work_name:'u-02-M'  });
 
   }

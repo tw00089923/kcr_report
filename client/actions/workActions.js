@@ -9,11 +9,7 @@ export function createWork(work){
 
 export function loadingwork(work){
 	return dispatch => {
-		return axios.get('/api/work',work).then( res=> {
-
-
-			console.log("ok");
-		});
+		return axios.post('/api/work',work);
 	}
 
 

@@ -20,10 +20,10 @@ let router = express.Router();
 
 
 
-// router.get('/',(req,res) => {
+// router.post('/',(req,res) => {
 	
 // });
-router.get('/',(req,res)=>{
+router.post('/',(req,res)=>{
 	const { work } = req.body ;
 		console.log(work);
 
@@ -41,52 +41,52 @@ router.get('/',(req,res)=>{
 
 });
 
-router.post('/', (req, res) => {
+// router.post('/', (req, res) => {
 
 	
 
- const {  work_number,
-	  work_name,
-	  work_material,
-	  work_process,
-	  work_input,
-	  work_lottos,
-	  work_goodnumber,
-	  work_accumulation,
-	  work_badnumber,
-	  work_unfinished,
-	  work_starttime,
-	  work_endtime ,setuptime,work_line} = req.body;
+//  const {  work_number,
+// 	  work_name,
+// 	  work_material,
+// 	  work_process,
+// 	  work_input,
+// 	  work_lottos,
+// 	  work_goodnumber,
+// 	  work_accumulation,
+// 	  work_badnumber,
+// 	  work_unfinished,
+// 	  work_starttime,
+// 	  work_endtime ,setuptime,work_line} = req.body;
 	
-  const Workheet = new Work	({
-	  work_number,
-	  work_name,
-	  work_material,
-	  work_process,
-	  work_input,
-	  work_lottos,
-	  work_goodnumber,
-	  work_accumulation,
-	  work_badnumber,
-	  work_unfinished,
-	  work_starttime,
-	  work_endtime,setuptime,work_line
-  });
+//   const Workheet = new Work	({
+// 	  work_number,
+// 	  work_name,
+// 	  work_material,
+// 	  work_process,
+// 	  work_input,
+// 	  work_lottos,
+// 	  work_goodnumber,
+// 	  work_accumulation,
+// 	  work_badnumber,
+// 	  work_unfinished,
+// 	  work_starttime,
+// 	  work_endtime,setuptime,work_line
+//   });
 
-  		Workheet.save( ( err , data ) =>{  
-  			if (err){
-  				 res.status(400).json({message:"insert DB errors"});
+//   		Workheet.save( ( err , data ) =>{  
+//   			if (err){
+//   				 res.status(400).json({message:"insert DB errors"});
 
-  			}else{
+//   			}else{
   				
-      		  res.json({ success: true });
+//       		  res.json({ success: true });
    
-  			}
+//   			}
 
-  		} );
+//   		} );
 
 
-  res.status(201).json({ success: true });
-});
+//   res.status(201).json({ success: true });
+// });
 
 export default router;
