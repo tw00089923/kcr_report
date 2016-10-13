@@ -33,8 +33,9 @@ class WorkForm extends React.Component {
     errors : {},
     invalid: false,
     show:false,
-    work:'',
-    worksearch:''
+  
+    worksearch:'',
+    worksearch_bar:true
 
     };
 
@@ -89,11 +90,12 @@ class WorkForm extends React.Component {
 
   upload(){
     this.props.loadingwork(this.state.worksearch);
-    // this.setState({work_name:'u-02-M'  });
+    this.setState({work_name:this.props.work.work_name,work_material:this.props.work.work_material,work_number:this.props.work.work_number });
 
   }
 
   render() {
+    console.log(this);
 
     const { errors }  = this.state;
     const line = ['201','202','203','204','205','206','207','208','209','210','212'];
@@ -105,10 +107,20 @@ class WorkForm extends React.Component {
 
 
       <form onSubmit={this.onSubmit} className="form-group" >  
-  { errors.form }{this.state.work}
-        <div className="form-group"> 
+
+     
+
+  {this.state.worksearch}
+          <div className="form-group"> 
+          <input type="text" className="control-input " value={this.state.worksearch} name="worksearch" onChange={this.onChange} placeholder="尋找工單"/>
+          <button onClick={this.upload} className="btn btn-primary btn-sm" disabled={this.state.show}> 搜尋工單 </button> 
+          </div>
+         <div className="form-group"> 
         <label className="control-label"> 
-        <input type="range" min="" max="50" name="work" value={this.state.work} onChange={this.onChange }/></label> 
+        <input type="range" min="" max="50" name="work" value={this.state.work} onChange={this.onChange } /></label> 
+       
+
+
         <label className="control-label">   線別  </label> 
          <select
             className="form-control col-md-3"
@@ -120,12 +132,6 @@ class WorkForm extends React.Component {
             {options}
           </select>
        </div>
-
-  {this.state.worksearch}
-      <div className="form-group"> 
-      <input type="text" className="control-input " value={this.state.worksearch} name="worksearch" onChange={this.onChange}/>
-      <button onClick={this.upload} className="btn btn-primary btn-sm"> X </button> 
-      </div>
       
         <TextFieldGroup
           field="work_number"
@@ -289,7 +295,13 @@ WorkForm.contextTypes = {
   router: React.PropTypes.object.isRequired
 }
 
+function mapStateToProps(state) {
+  return {
+    work: state.work
+  };
+}
 
-export default connect(null, { createWork , loadingwork })(WorkForm);
+
+export default connect( mapStateToProps, { createWork , loadingwork })(WorkForm);
 
 

@@ -8,9 +8,12 @@ const initialState = {
 export default (state = initialState, action = {}) => {
   switch(action.type) {
     case SET_CURRENT_WORK:
-      return [...state,{
-        work: action.works
-      }];
+      return { work_number:action.work.work_number, work_name:action.work.work_name,work_material:action.work.work_material}
     default: return state;
   }
 }
+
+
+// Object.assign({}, state, {
+//         work: action.work
+//       })

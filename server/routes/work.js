@@ -26,6 +26,8 @@ let router = express.Router();
 router.post('/',(req,res)=>{
 	const { work } = req.body ;
 		console.log(work);
+		
+
 
 	Work.findOne( work ,(err,works)=>{
 		if (err) {
