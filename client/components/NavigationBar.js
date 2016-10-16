@@ -62,7 +62,8 @@ class NavigationBar extends React.Component {
 
 
     const userLinks = (
-      <ul className="nav navbar-nav navbar-right">
+      
+      <ul className="nav navbar-nav navbar-right pull-xs-right">
 
        
         <li><a href="#" onClick={this.handleClick} >{user.username} </a>

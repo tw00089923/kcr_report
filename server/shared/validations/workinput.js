@@ -46,15 +46,15 @@ export default function workInput(data) {
    if (Validator.isNull(data.work_unfinished)) {
     errors.work_unfinished= 'This field is required';
   }
-  //   if (Validator.isNull(data.setuptime)) {
-  //   errors.setuptime= 'This field is required';
-  // }
-  // if (Validator.isNull(data.work_starttime)) {
-  //   errors.work_starttime= '請輸入正確時間';
-  // }
-  //  if (Validator.isNull(data.work_endtime)) {
-  //   errors.work_endtime= '請輸入正確時間';
-  // }
+    if (Validator.isNull(data.setuptime)) {
+    errors.setuptime= 'This field is required';
+  }
+  if (Validator.isNull(data.work_starttime)) {
+    errors.work_starttime= '請輸入正確時間';
+  }
+   if (Validator.isNull(data.work_endtime)) {
+    errors.work_endtime= '請輸入正確時間';
+  }
   if (Validator.isNull(data.setuptime)) {
     errors.setuptime= 'This field is required';
   }

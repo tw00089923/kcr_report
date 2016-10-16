@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { SET_CURRENT_WORK } from './types';
+import { SET_CURRENT_WORK ,ADD_WORK_TABLE,DELETE_WORK_TABLE} from './types';
 
 export function createWork(work){
 	return dispatch => {
@@ -9,10 +9,9 @@ export function createWork(work){
 
 export function loadingwork(work){
 	return dispatch => {
-		return axios.post('/api/work',work).then( res =>{
+		return axios.get('/api/work',work).then( res =>{
 
 			console.log(res);
-
 			dispatch(setCurrentWork(res.data));
 		});
 	}
@@ -28,3 +27,4 @@ export function setCurrentWork(work) {
    
   };
 }
+

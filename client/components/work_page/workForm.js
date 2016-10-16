@@ -1,15 +1,16 @@
 import React from 'react';
 
 import map from 'lodash/map';
+import _ from 'lodash';
 import classnames from 'classnames';
 import { connect } from 'react-redux';
-
+import moment from 'moment';
 import workInput from '../../../server/shared/validations/workinput';
 
-import TextFieldGroup from '../common/TextFieldGroup';
+// import TextFieldGroup from '../common/TextFieldGroup';
 import { createWork ,loadingwork} from '../../actions/workActions';
-import { Modal,Button } from 'react-bootstrap';
-import axios from 'axios';
+import { Modal,Button,Table } from 'react-bootstrap';
+
 
 class WorkForm extends React.Component {
   constructor(props) {
@@ -33,9 +34,11 @@ class WorkForm extends React.Component {
     errors : {},
     invalid: false,
     show:false,
-  
+    work:'',
     worksearch:'',
-    worksearch_bar:true
+    worksearch_bar:true,
+    work_table:[1],
+    tableSheet:false
 
     };
 
@@ -88,181 +91,131 @@ class WorkForm extends React.Component {
     
   }
 
-  upload(){
-    this.props.loadingwork(this.state.worksearch);
-    this.setState({work_name:this.props.work.work_name,work_material:this.props.work.work_material,work_number:this.props.work.work_number });
+  upload(e){
+            e.preventDefault();
+// this.props.loadingwork(this.state.worksearch);
+        this.props.loadingwork(this.state.worksearch);
+        this.setState({work_name:this.props.work.work_name,work_material:this.props.work.work_material,work_number:this.props.work.work_number });
 
+
+    // if (_.isEmpty(this.state.worksearch)){
+    //     this.setState({errors:{  worksearch: "請輸入工單號碼"}});
+    //   }else{
+    //     this.props.loadingwork(this.state.worksearch);
+    //     this.setState({work_name:this.props.work.work_name,work_material:this.props.work.work_material,work_number:this.props.work.work_number });
+    
+    //   }
   }
 
+
+
+
+ 
+
   render() {
-    console.log(this);
+   console.log(this);
+ // const time_sub = moment.duration(1, 'h');
+
+
+
+ // 
+    const date1 = (moment(this.state.work_endtime, "HH:mm").hour()-moment(this.state.work_starttime, "HH:mm").hour())*60+(moment(this.state.work_endtime, "HH:mm").minutes()-moment(this.state.work_starttime, "HH:mm").minutes());
+    
+
+    if (date1){
+      return console.log("right");
+    };
+
 
     const { errors }  = this.state;
     const line = ['201','202','203','204','205','206','207','208','209','210','212'];
     const options = map(line, (val) =>
       <option key={val} value={val}>{val}</option>
     );     
+
+    const worksheet = (
+         <input type="range" min="" max="50" name="work" value={this.state.work} onChange={this.onChange } /> 
+      );
+
+
+
     return (
       
 
-
       <form onSubmit={this.onSubmit} className="form-group" >  
-
-     
-
-  {this.state.worksearch}
           <div className="form-group"> 
-          <input type="text" className="control-input " value={this.state.worksearch} name="worksearch" onChange={this.onChange} placeholder="尋找工單"/>
+          <input type="text" className="control-input form-inline" value={this.state.worksearch} name="worksearch" onChange={this.onChange} placeholder={this.state.errors.worksearch}/>
           <button onClick={this.upload} className="btn btn-primary btn-sm" disabled={this.state.show}> 搜尋工單 </button> 
           </div>
+   
          <div className="form-group"> 
-        <label className="control-label"> 
-        <input type="range" min="" max="50" name="work" value={this.state.work} onChange={this.onChange } /></label> 
-       
-
-
-        <label className="control-label">   線別  </label> 
-         <select
-            className="form-control col-md-3"
-            name="work_line"
-            onChange={this.onChange}
-            value={this.state.work_line}
-          >
+      <label className="control-label">   線別  </label> 
+         <select className="form-control col-md-3" name="work_line" onChange={this.onChange} value={this.state.work_line}  >
             <option value="" disabled>選線別</option>
             {options}
           </select>
        </div>
-      
-        <TextFieldGroup
-          field="work_number"
-          label="工號"
-          name="work_number"
-          value={this.state.work_number}
-          onChange={this.onChange}
-          error={errors.work_number} />
-  
-         <TextFieldGroup
-          field="work_name"
-          label="品名"
-          name="work_name"
-          value={this.state.work_name}
-          onChange={this.onChange}
-          error={errors.work_name}
-        />
-
+     
     
 
+        <label className="control-label">料號 : {this.state.work_name }   <span className="" style={{"color":"red"}}> {errors.work_name}  </span></label>
+        <input type="number" name="work_name" value={this.state.work_name} onChange={this.onChange} className="form-control"/>
+    
+    
 
-        <TextFieldGroup
-          field="work_material"
-          label="料號"
-          name="work_material"
-          value={this.state.work_material}
-          onChange={this.onChange}
-          error={errors.work_material}
-        />
-        <TextFieldGroup
-          field="work_process"
-          label="工程別"
-          name="work_process"
-          value={this.state.work_process}
-          onChange={this.onChange}
-          error={errors.work_process}
-        />
-        <TextFieldGroup
-          field="work_input"
-          label="投入量"
-          name="work_input"
-          value={this.state.work_input}
-          onChange={this.onChange}
-          error={errors.work_input}
-           type="number"
-        />
-        <TextFieldGroup
-          field="work_lottos"
-          label="批量"
-          name="work_lottos"
-          value={this.state.work_lottos}
-          onChange={this.onChange}
-          error={errors.work_lottos}
-           type="number"
-        />
-        <TextFieldGroup
-          field="work_goodnumber"
-          label="良品"
-          name="work_goodnumber"
-          value={this.state.work_goodnumber}
-          onChange={this.onChange}
-          error={errors.work_goodnumber}
-           type="number"
-        />
-        <TextFieldGroup
-          field="work_accumulation"
-          label="累計"
-          name="work_accumulation"
-          value={this.state.work_accumulation}
-          onChange={this.onChange}
-          error={errors.work_accumulation}
-           type="number"
-        />
-        <TextFieldGroup
-          field="work_badnumber"
-          label="不良品"
-          name="work_badnumber"
-          value={this.state.work_badnumber}
-          onChange={this.onChange}
-          error={errors.work_badnumber}
-          type="number"
-        />
-        <TextFieldGroup
-          field="work_unfinished"
-          label="未完成品"
-          name="work_unfinished"
-          value={this.state.work_unfinished}
-          onChange={this.onChange}
-          error={errors.work_unfinished}
-          type="number"
-        />
+        <label className="control-label">料號 : {this.state.work_material} <span className="" style={{"color":"red"}}>  {errors.work_material} </span></label>
+        <input type="number" name="work_material" value={this.state.work_material} onChange={this.onChange} className="form-control"/>
+           
+ 
+        <label className="control-label">工程別 : {this.state.work_process} <span className="" style={{"color":"red"}}> {errors.work_process}</span></label>
+        <input type="number" name="work_process" value={this.state.work_process} onChange={this.onChange} className="form-control"/>
+       
 
-        <TextFieldGroup
-          field="work_starttime"
-          label="起始時間"
-          name="work_starttime"
-          value={this.state.work_starttime}
-          onChange={this.onChange}
-          error={errors.work_starttime}
-          type="time"
-        />    
-        <TextFieldGroup
-          field="work_endtime"
-          label="結束時間"
-          name="work_endtime"
-          value={this.state.work_endtime}
-          onChange={this.onChange}
-          error={errors.work_endtime}
-          type="time"
-        />
-         <TextFieldGroup
-          field="setuptime"
-          label="整備時間"
-          name="setuptime"
-          value={this.state.setuptime}
-          onChange={this.onChange}
-          error={errors.setuptime}
-          type="number"
-        />
+        <label className="control-label">投入量 : {this.state.work_input} <span className="" style={{"color":"red"}}> {errors.work_input}</span></label>
+        <input type="number" name="work_input" value={this.state.work_input} onChange={this.onChange} className="form-control"/>
+       
 
+        <label className="control-label">良品 : {this.state.work_goodnumber}  <span className="" style={{"color":"red"}}>{errors.work_goodnumber}</span></label>
+        <input type="number" name="work_goodnumber" value={this.state.work_goodnumber} onChange={this.onChange} className="form-control"/>
+       
+
+        <label className="control-label">累積 : {this.state.work_accumulation}    <span className="" style={{"color":"red"}}>   {errors.work_accumulation}</span></label>
+        <input type="number" name="work_accumulation" value={this.state.work_accumulation} onChange={this.onChange} className="form-control"/>
+  
+
+        <label className="control-label">累積 : {this.state.work_accumulation}   <span className="" style={{"color":"red"}}> {errors.work_accumulation}</span></label>
+        <input type="number" name="work_accumulation" value={this.state.work_accumulation} onChange={this.onChange} className="form-control"/>
+     
+
+        <label className="control-label">不良品 : {this.state.work_badnumber}  <span className="" style={{"color":"red"}}>{errors.work_badnumber}</span></label>
+        <input type="number" name="work_badnumber" value={this.state.work_badnumber} onChange={this.onChange} className="form-control"/>
+       
+
+        <label className="control-label">未完成品 : {this.state.work_unfinished}  <span className="" style={{"color":"red"}}>{errors.work_unfinished}</span></label>
+        <input type="number" name="work_unfinished" value={this.state.work_unfinished} onChange={this.onChange} className="form-control"/>
+       
+
+        <label className="control-label">整備時間 : {this.state.setuptime} <span className="" style={{"color":"red"}}> {errors.work_setuptime}</span></label>
+        <input type="number" name="setuptime" value={this.state.setuptime} onChange={this.onChange} className="form-control"/>
+      
+
+        <label className="control-label">起始時間 : {this.state.work_starttime}  <span className="" style={{"color":"red"}}>{errors.work_starttime}</span></label>
+        <input type="time" name="work_starttime" value={this.state.work_starttime} onChange={this.onChange} className="form-control"/>
+       
         
+        <label className="control-label">結束時間  : {this.state.work_endtime?this.state.work_endtime:""} <span className="" style={{"color":"red"}}>  {errors.work_endtime}</span></label>
+        <input type="time" name="work_endtime" value={this.state.work_endtime} onChange={this.onChange} className="form-control" />
+      
+        
+     
 
    
 
 
 
+         <div className="form-group row"><button className="btn btn-primary btn-lg" disabled={this.state.loading}>上傳</button> </div>
 
-         <div className="form-group"><button className="btn btn-primary btn-lg" disabled={this.state.loading}>上傳</button></div>
-
-
-  
+        
 
 
 
@@ -288,7 +241,8 @@ class WorkForm extends React.Component {
 
 WorkForm.propTypes = {
 
-  createWork: React.PropTypes.func.isRequired
+  createWork: React.PropTypes.func.isRequired,
+  loadingwork: React.PropTypes.func.isRequired
 }
 
 WorkForm.contextTypes = {
