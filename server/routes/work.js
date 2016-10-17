@@ -20,8 +20,8 @@ let router = express.Router();
 
 
 
-// router.post('/',(req,res) => {
-	
+// router.get('/work/work_index',(req,res) => {
+// 	 res.status(200).json(works);
 // });
 router.get('/',(req,res)=>{
  	console.log(work);

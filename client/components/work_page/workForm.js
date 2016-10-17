@@ -10,7 +10,7 @@ import workInput from '../../../server/shared/validations/workinput';
 // import TextFieldGroup from '../common/TextFieldGroup';
 import { createWork ,loadingwork} from '../../actions/workActions';
 import { Modal,Button,Table } from 'react-bootstrap';
-
+// import { Link } from 'react-router';
 
 class WorkForm extends React.Component {
   constructor(props) {
@@ -147,6 +147,8 @@ class WorkForm extends React.Component {
           <input type="text" className="control-input form-inline" value={this.state.worksearch} name="worksearch" onChange={this.onChange} placeholder={this.state.errors.worksearch}/>
           <button onClick={this.upload} className="btn btn-primary btn-sm" disabled={this.state.show}> 搜尋工單 </button> 
           </div>
+
+
    
          <div className="form-group"> 
       <label className="control-label">   線別  </label> 
@@ -156,7 +158,7 @@ class WorkForm extends React.Component {
           </select>
        </div>
      
-    
+     
 
         <label className="control-label">料號 : {this.state.work_name }   <span className="" style={{"color":"red"}}> {errors.work_name}  </span></label>
         <input type="number" name="work_name" value={this.state.work_name} onChange={this.onChange} className="form-control"/>
