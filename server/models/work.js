@@ -12,8 +12,8 @@ const workSchema = new Schema({
   work_accumulation: Number,
   work_badnumber: Number,
   work_unfinished: Number,
-  work_starttime: Date,
-  work_endtime: Date,
+  work_starttime: String,
+  work_endtime: String,
   work_line:Number,
   setuptime:Number
 });

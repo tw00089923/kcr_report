@@ -8,3 +8,8 @@ export const SET_CURRENT_WORK = 'SET_CURRENT_WORK';
 // work_table 
 export const ADD_WORK_TABLE='SET_WORK_TABLE_ADD';
 export const DELETE_WORK_TABLE ='DELETE_WORK_TABLE';
+
+
+// 全部工單
+
+export const LOADING_WORK="LOADING_WORK";

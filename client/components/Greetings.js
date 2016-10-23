@@ -103,7 +103,17 @@ const data = [
  
     // this.xScale = d3.scaleLinear();
 
+const form = (
 
+                <ButtonGroup justified>
+                    <Button href="#">Left</Button>
+                    <Button href="#">Middle</Button>
+                    <DropdownButton title="Dropdown" id="bg-justified-dropdown">
+                      <MenuItem eventKey="1">Dropdown link</MenuItem>
+                      <MenuItem eventKey="2">Dropdown link</MenuItem>
+                    </DropdownButton>
+                </ButtonGroup>
+  );
 
     return (
 
@@ -114,14 +124,7 @@ const data = [
     		 <p>完成率 <Badge>42</Badge>  / <Badge>70</Badge> </p>
 
     
-          		 	<ButtonGroup justified>
-                    <Button href="#">Left</Button>
-                    <Button href="#">Middle</Button>
-                    <DropdownButton title="Dropdown" id="bg-justified-dropdown">
-                      <MenuItem eventKey="1">Dropdown link</MenuItem>
-                      <MenuItem eventKey="2">Dropdown link</MenuItem>
-                    </DropdownButton>
-                </ButtonGroup>
+          		
                 <hr/>
                <div className="d3_line" id="d3_line"></div>
           

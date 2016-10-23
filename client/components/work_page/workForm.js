@@ -77,12 +77,11 @@ class WorkForm extends React.Component {
   onSubmit(e) {
     e.preventDefault();
 
-
+    console.log("OK");
      if (this.isValid()) {
       this.setState({ errors: {}, isLoading: true });
       this.props.createWork(this.state).then(
-        () => {
-          
+        () => {         
           this.context.router.push('/');
         },
         (err) => this.setState({ errors: err.response.data, isLoading: false })
@@ -119,12 +118,12 @@ class WorkForm extends React.Component {
 
 
  // 
-    const date1 = (moment(this.state.work_endtime, "HH:mm").hour()-moment(this.state.work_starttime, "HH:mm").hour())*60+(moment(this.state.work_endtime, "HH:mm").minutes()-moment(this.state.work_starttime, "HH:mm").minutes());
+    // const date1 = (moment(this.state.work_endtime, "HH:mm").hour()-moment(this.state.work_starttime, "HH:mm").hour())*60+(moment(this.state.work_endtime, "HH:mm").minutes()-moment(this.state.work_starttime, "HH:mm").minutes());
     
 
-    if (date1){
-      return console.log("right");
-    };
+    // if (date1){
+    //   return console.log("right");
+    // };
 
 
     const { errors }  = this.state;
@@ -159,13 +158,17 @@ class WorkForm extends React.Component {
        </div>
      
      
+       
+        <label className="control-label">工號 : {this.state.work_number }   <span className="" style={{"color":"red"}}> {errors.work_number}  </span></label>
+        <input type="number" name="work_number" value={this.state.work_number} onChange={this.onChange} className="form-control"/>
+    
 
-        <label className="control-label">料號 : {this.state.work_name }   <span className="" style={{"color":"red"}}> {errors.work_name}  </span></label>
+        <label className="control-label">品名 : {this.state.work_name }   <span className="" style={{"color":"red"}}> {errors.work_name}  </span></label>
         <input type="number" name="work_name" value={this.state.work_name} onChange={this.onChange} className="form-control"/>
     
     
 
-        <label className="control-label">料號 : {this.state.work_material} <span className="" style={{"color":"red"}}>  {errors.work_material} </span></label>
+        <label className="control-label">工單號碼 : {this.state.work_material} <span className="" style={{"color":"red"}}>  {errors.work_material} </span></label>
         <input type="number" name="work_material" value={this.state.work_material} onChange={this.onChange} className="form-control"/>
            
  
@@ -175,15 +178,14 @@ class WorkForm extends React.Component {
 
         <label className="control-label">投入量 : {this.state.work_input} <span className="" style={{"color":"red"}}> {errors.work_input}</span></label>
         <input type="number" name="work_input" value={this.state.work_input} onChange={this.onChange} className="form-control"/>
-       
+      
+        <label className="control-label">批量 : {this.state.work_lottos}  <span className="" style={{"color":"red"}}>{errors.work_lottos}</span></label>
+        <input type="number" name="work_lottos" value={this.state.work_lottos} onChange={this.onChange} className="form-control"/>
+        
 
         <label className="control-label">良品 : {this.state.work_goodnumber}  <span className="" style={{"color":"red"}}>{errors.work_goodnumber}</span></label>
         <input type="number" name="work_goodnumber" value={this.state.work_goodnumber} onChange={this.onChange} className="form-control"/>
        
-
-        <label className="control-label">累積 : {this.state.work_accumulation}    <span className="" style={{"color":"red"}}>   {errors.work_accumulation}</span></label>
-        <input type="number" name="work_accumulation" value={this.state.work_accumulation} onChange={this.onChange} className="form-control"/>
-  
 
         <label className="control-label">累積 : {this.state.work_accumulation}   <span className="" style={{"color":"red"}}> {errors.work_accumulation}</span></label>
         <input type="number" name="work_accumulation" value={this.state.work_accumulation} onChange={this.onChange} className="form-control"/>
@@ -205,7 +207,7 @@ class WorkForm extends React.Component {
         <input type="time" name="work_starttime" value={this.state.work_starttime} onChange={this.onChange} className="form-control"/>
        
         
-        <label className="control-label">結束時間  : {this.state.work_endtime?this.state.work_endtime:""} <span className="" style={{"color":"red"}}>  {errors.work_endtime}</span></label>
+        <label className="control-label">結束時間  : {this.state.work_endtime} <span className="" style={{"color":"red"}}>  {errors.work_endtime}</span></label>
         <input type="time" name="work_endtime" value={this.state.work_endtime} onChange={this.onChange} className="form-control" />
       
         

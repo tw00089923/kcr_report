@@ -1,11 +1,11 @@
-import { SET_CURRENT_WORK ,ADD_WORK_TABLE, DELETE_WORK_TABLE } from '../actions/types';
+import { SET_CURRENT_WORK ,ADD_WORK_TABLE, DELETE_WORK_TABLE,LOADING_WORK } from '../actions/types';
 
 
 import isEmpty from 'lodash/isEmpty';
 
 const initialState = {
   work: {} ,
-  work_tabel:[0]
+  work_tabel:[]
 };
 
 export default (state = initialState, action = {}) => {
@@ -16,6 +16,8 @@ export default (state = initialState, action = {}) => {
    		return {work_tabel:work_tabel.concat(["1"])};
    	case DELETE_WORK_TABLE: 
    		return {work_tabel:work_tabel.concat(["1"])};
+    case LOADING_WORK:
+      return {  work_tabel: action.work};
 
     default: return state;
 

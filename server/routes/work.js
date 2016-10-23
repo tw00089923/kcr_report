@@ -23,10 +23,31 @@ let router = express.Router();
 // router.get('/work/work_index',(req,res) => {
 // 	 res.status(200).json(works);
 // });
-router.get('/',(req,res)=>{
- 	console.log(work);
-	let { work } = req.body;
-	Work.findOne((err,works)=>{
+
+
+router.put('/work_all/:id', (req,res) =>{
+
+	const {id}  =req.params._id;
+
+	Work.update({ _id: req.params.id }, {
+   	
+  } ,(err) => {
+    if (err) throw err;
+    console.log('User updated successfully');
+    res.json({ success: true });      
+  });
+
+
+
+
+}); 
+
+
+
+router.get('/work_all',(req,res)=>{
+
+
+	Work.find((err,works)=>{
 		if (err) {
 			console.log(err);
 			 // res.status(401).json({ errors: { form: '密碼錯誤' } })
@@ -36,7 +57,7 @@ router.get('/',(req,res)=>{
 			 // res.status(201).json(works);
 
 		}
-	});
+	}).limit(20) ;
 		
 
 
@@ -44,7 +65,7 @@ router.get('/',(req,res)=>{
 
 router.post('/', (req, res) => {
 
-	// console.log(req);
+	console.log(req);
 
  const {  work_number,
 	  work_name,
