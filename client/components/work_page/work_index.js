@@ -9,13 +9,21 @@ import moment from 'moment';
 export class work_index extends React.Component {
   constructor(props) {
     super(props);
+    this.time_add = this.time_add.bind(this);
   }
   componentDidMount() {
   	this.props.work_all();
   }
+  time_add(a,b){
+
+  	// const starttime = moment.duration(a).minutes();
+  	// const endtime =moment.duration(b).minutes();
+  	 return moment.duration(b).asMinutes()-moment.duration(a).asMinutes();
+  }
 
   render() {
   	console.log(this);
+  	//<ProgressBar active now={45} label={`${45}%`}/> 
   	
     return (
 
@@ -39,7 +47,7 @@ export class work_index extends React.Component {
     				<td>{val.work_number}</td> 
     				<td>{val.work_name *val.work_input}</td>
     				<td> {val.work_name} </td>
-    			  	<td>   <ProgressBar active now={45} label={`${45}%`}/> </td>
+    			  	<td> {this.time_add(val.work_starttime,val.work_endtime)}  </td>
 
 
     				</tr>  ) )}
