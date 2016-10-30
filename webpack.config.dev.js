@@ -24,11 +24,18 @@ export default {
           path.join(__dirname, 'client'),
           path.join(__dirname, 'server/shared')
         ],
-        loaders: [ 'react-hot', 'babel' ]
+        loaders: [ 'react-hot', 'babel']
       }
     ]
   },
   resolve: {
     extentions: [ '', '.js' ]
-  }
+  },
+  node: {
+  fs: 'empty'
+        },
+  externals: [
+  { './cptable': 'var cptable' },
+  {'./jszip': 'jszip'}
+  ]
 }

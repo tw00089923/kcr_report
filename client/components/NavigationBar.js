@@ -53,7 +53,7 @@ class NavigationBar extends React.Component {
               
             <li className=" user-profile "  /*style={{background: 'rgba(124, 224, 249, .3)' , list:'none'}} */> <Link to="/work"> 工單輸入 </Link> </li>
             <li> <Link to="/work_index"> 工單管理 </Link>  </li>
-            <li>  </li>
+            <li> <Link to="/rate_index"> 匯率 </Link>  </li>
             <hr/>
              <li> <a href="#" onClick={this.logout.bind(this)}> 登出</a></li>
           </Popover>

@@ -13,3 +13,9 @@ export const DELETE_WORK_TABLE ='DELETE_WORK_TABLE';
 // 全部工單
 
 export const LOADING_WORK="LOADING_WORK";
+
+
+
+// 匯率 action
+
+export const SET_NT_RATE = 'SET_NT_RATE';
